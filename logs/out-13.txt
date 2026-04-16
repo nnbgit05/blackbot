@@ -1,0 +1,661 @@
+Engine comparison
+Depth: 6
+C++ command: ./build/engine <fen> <depth>
+Python command: pypy3 ./python/main.py <fen> <depth>
+================================================================================
+
+Position 1
+FEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.2675s
+STDOUT:
+Current Evaluation: 0
+PV: g1f3, g8f6, b1c3, b8c6, e2e4, d7d5
+Depth 6 complete with 1 researches.
+Best move found is g1f3, nodes taken: 23679, score: 0
+
+NODES: 23679| TIME: 0.252976| NPS: 93601.8
+
+[Python]
+Return code: 0
+Time: 1.0497s
+STDOUT:
+Current Evaluation: 0.0
+PV line: g1f3 g8f6 b1c3 b8c6 e2e4 e7e5
+Depth 6 complete, best move found is g1f3, nodes taken: 10465
+NODES: 10465 | TIME: 0.95 | NPS: 11015.79
+
+================================================================================
+
+Position 2
+FEN: r3kb1r/pppb1ppp/2n1p3/qB6/3P4/1QP1PN2/P4PPP/R1B1K2R w KQkq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 5.1681s
+STDOUT:
+Current Evaluation: 5
+PV: e1g1, f8d6, e3e4, a7a6, b5c4, e8g8
+Depth 6 complete with 0 researches.
+Best move found is e1g1, nodes taken: 522808, score: 15
+
+NODES: 522808| TIME: 5.15166| NPS: 101483
+
+[Python]
+Return code: 0
+Time: 6.5584s
+STDOUT:
+Current Evaluation: 0.5
+PV line: e1g1 f8d6 e3e4 a7a6 b5c4 e8g8
+Depth 6 complete, best move found is e1g1, nodes taken: 185083
+NODES: 185083 | TIME: 6.45 | NPS: 28695.04
+
+================================================================================
+
+Position 3
+FEN: r1bq1rk1/pppn1ppp/3bpn2/3p4/3P4/2NBPN2/PPQ2PPP/R1B2RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.3266s
+STDOUT:
+Current Evaluation: -95
+PV: e3e4, f6e4, c3e4, d5e4, d3e4, d7f6
+Depth 6 complete with 0 researches.
+Best move found is e3e4, nodes taken: 172506, score: -80
+
+NODES: 172506| TIME: 1.30596| NPS: 132091
+
+[Python]
+Return code: 0
+Time: 3.4616s
+STDOUT:
+Current Evaluation: -9.5
+PV line: e3e4 f6e4 c3e4 d5e4 d3e4 d7f6
+Depth 6 complete, best move found is e3e4, nodes taken: 130601
+NODES: 130601 | TIME: 3.35 | NPS: 38985.37
+
+================================================================================
+
+Position 4
+FEN: 2r2rk1/1bqnbppp/p3pn2/1p6/3P4/1BN1PN2/PPQ2PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 6.2570s
+STDOUT:
+Current Evaluation: -205
+PV: c2d3, c7b6, e3e4, b5b4, e4e5, b4c3
+Depth 6 complete with 0 researches.
+Best move found is c2d3, nodes taken: 925635, score: -215
+
+NODES: 925635| TIME: 6.23438| NPS: 148473
+
+[Python]
+Return code: 0
+Time: 11.1903s
+STDOUT:
+Current Evaluation: -20.5
+PV line: c2d3 c7b6 e3e4 b5b4 e4e5 b4c3
+Depth 6 complete, best move found is c2d3, nodes taken: 579658
+NODES: 579658 | TIME: 11.08 | NPS: 52315.7
+
+================================================================================
+
+Position 5
+FEN: r2q1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.0840s
+STDOUT:
+Current Evaluation: 85
+PV: e2e4, c6d4, c1e3, d8b6, a1b1, f8e8
+Depth 6 complete with 0 researches.
+Best move found is e2e4, nodes taken: 121469, score: 125
+
+NODES: 121469| TIME: 1.0674| NPS: 113799
+
+[Python]
+Return code: 0
+Time: 2.7283s
+STDOUT:
+Current Evaluation: 8.5
+PV line: e2e4 c6d4 c1f4 d8b6 a1b1 f8e8
+Depth 6 complete, best move found is e2e4, nodes taken: 110161
+NODES: 110161 | TIME: 2.62 | NPS: 42046.18
+
+================================================================================
+
+Position 6
+FEN: 4rrk1/1pp1qppp/p1np1n2/8/2P5/1PN1PN2/PB1Q1PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.5307s
+STDOUT:
+Current Evaluation: 295
+PV: c3d5, f6d5, c4d5, c6e5, e3e4, e5f3, g2f3
+Depth 6 complete with 0 researches.
+Best move found is c3d5, nodes taken: 53379, score: 320
+
+NODES: 53379| TIME: 0.515127| NPS: 103623
+
+[Python]
+Return code: 0
+Time: 2.1642s
+STDOUT:
+Current Evaluation: 29.5
+PV line: c3d5 f6d5 c4d5 c6e5 e3e4 e5f3 g2f3
+Depth 6 complete, best move found is c3d5, nodes taken: 48425
+NODES: 48425 | TIME: 2.06 | NPS: 23507.28
+
+================================================================================
+
+Position 7
+FEN: r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 4.1491s
+STDOUT:
+Current Evaluation: 50
+PV: c1g5, e8g8, c3d5, d7d6, d5f6, g7f6
+Depth 6 complete with 0 researches.
+Best move found is c1g5, nodes taken: 584483, score: 35
+
+NODES: 584483| TIME: 4.13287| NPS: 141423
+
+[Python]
+Return code: 0
+Time: 7.9670s
+STDOUT:
+Current Evaluation: 5.0
+PV line: c1g5 e8g8 c3d5 d7d6 d5f6 g7f6
+Depth 6 complete, best move found is c1g5, nodes taken: 281818
+NODES: 281818 | TIME: 7.85 | NPS: 35900.38
+
+================================================================================
+
+Position 8
+FEN: r2q1rk1/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.7895s
+STDOUT:
+Current Evaluation: 310
+PV: c4e6, f7e6, d3d4, e5d4, f3d4, e6e5
+Depth 6 complete with 0 researches.
+Best move found is c4e6, nodes taken: 47181, score: 340
+
+NODES: 47181| TIME: 0.763191| NPS: 61820.7
+
+[Python]
+Return code: 0
+Time: 3.0974s
+STDOUT:
+Current Evaluation: 31.0
+PV line: c4e6 f7e6 d3d4 e5d4 f3d4 e6e5
+Depth 6 complete, best move found is c4e6, nodes taken: 45623
+NODES: 45623 | TIME: 2.92 | NPS: 15624.32
+
+================================================================================
+
+Position 9
+FEN: 2r2rk1/pp1nqppp/2pbpn2/3p4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 2.3952s
+STDOUT:
+Current Evaluation: -75
+PV: e3e4, f6e4, c3e4, d5e4, d3e4, d7f6
+Depth 6 complete with 0 researches.
+Best move found is e3e4, nodes taken: 351163, score: -60
+
+NODES: 351163| TIME: 2.3783| NPS: 147653
+
+[Python]
+Return code: 0
+Time: 4.7238s
+STDOUT:
+Current Evaluation: -7.5
+PV line: c2a4 c8a8 a4b3 d7b6 e3e4 c6c5
+Depth 6 complete, best move found is c2a4, nodes taken: 249392
+NODES: 249392 | TIME: 4.61 | NPS: 54098.05
+
+================================================================================
+
+Position 10
+FEN: r1bq1rk1/pp3ppp/2n1pn2/2bp4/2P5/2NP1NP1/PPQ1PPBP/R1B2RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 2.2611s
+STDOUT:
+Current Evaluation: 85
+PV: c4d5, c6b4, c2b3, e6d5, e2e4, c8e6
+Depth 6 complete with 0 researches.
+Best move found is c4d5, nodes taken: 214822, score: 110
+
+NODES: 214822| TIME: 2.24443| NPS: 95713.3
+
+[Python]
+Return code: 0
+Time: 4.6508s
+STDOUT:
+Current Evaluation: 8.5
+PV line: c4d5 c6b4 c2b3 e6d5 e2e4 c8e6
+Depth 6 complete, best move found is c4d5, nodes taken: 210812
+NODES: 210812 | TIME: 4.55 | NPS: 46332.31
+
+================================================================================
+
+Position 11
+FEN: 8/8/8/3k4/8/4K3/8/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0154s
+STDOUT:
+Current Evaluation: 20
+PV: 
+Depth 6 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+NODES: 0| TIME: 2.7134e-05| NPS: 0
+
+[Python]
+Return code: 0
+Time: 0.1191s
+STDOUT:
+Current Evaluation: 2.0
+PV line: e3f2
+Depth 6 complete, best move found is e3f2, nodes taken: 36
+NODES: 36 | TIME: 0.01 | NPS: 3600.0
+
+================================================================================
+
+Position 12
+FEN: 8/8/8/3k4/8/4K3/6P1/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0231s
+STDOUT:
+Current Evaluation: 130
+PV: e3f2, d5c6, f2f1, c6b7, f1g1, b7b8
+Depth 6 complete with 0 researches.
+Best move found is e3f2, nodes taken: 1406, score: 110
+
+NODES: 1406| TIME: 0.00734296| NPS: 191476
+
+[Python]
+Return code: 0
+Time: 0.4280s
+STDOUT:
+Current Evaluation: 13.0
+PV line: e3f2 d5c6 f2f1 c6b7 f1g1 b7b8
+Depth 6 complete, best move found is e3f2, nodes taken: 1974
+NODES: 1974 | TIME: 0.33 | NPS: 5981.82
+
+================================================================================
+
+Position 13
+FEN: 8/8/8/2k5/8/2K5/5P2/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0223s
+STDOUT:
+Current Evaluation: 120
+PV: c3b2, c5b6, b2a1, b6a7, a1b1, a7b8
+Depth 6 complete with 0 researches.
+Best move found is c3b2, nodes taken: 1284, score: 110
+
+NODES: 1284| TIME: 0.00646053| NPS: 198745
+
+[Python]
+Return code: 0
+Time: 0.3790s
+STDOUT:
+Current Evaluation: 12.0
+PV line: c3b2 c5c6 b2a2 c6b7 a2b1 b7b8
+Depth 6 complete, best move found is c3b2, nodes taken: 1698
+NODES: 1698 | TIME: 0.28 | NPS: 6064.29
+
+================================================================================
+
+Position 14
+FEN: 8/8/3k4/8/3K4/8/8/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0159s
+STDOUT:
+Current Evaluation: -20
+PV: 
+Depth 6 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+NODES: 0| TIME: 2.9286e-05| NPS: 0
+
+[Python]
+Return code: 0
+Time: 0.1182s
+STDOUT:
+Current Evaluation: -2.0
+PV line: d4e3
+Depth 6 complete, best move found is d4e3, nodes taken: 30
+NODES: 30 | TIME: 0.01 | NPS: 3000.0
+
+================================================================================
+
+Position 15
+FEN: 6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0224s
+STDOUT:
+Current Evaluation: 0
+PV: g1h1, g8h8, h1g1, h8g8, g1h1, g8h8, h1g1
+Depth 6 complete with 0 researches.
+Best move found is g1h1, nodes taken: 1092, score: 0
+
+NODES: 1092| TIME: 0.00615315| NPS: 177470
+
+[Python]
+Return code: 0
+Time: 0.3872s
+STDOUT:
+Current Evaluation: 0.0
+PV line: g1h1 g8h8 h1g1 h8g8 g1h1 g8h8 h1g1
+Depth 6 complete, best move found is g1h1, nodes taken: 1106
+NODES: 1106 | TIME: 0.29 | NPS: 3813.79
+
+================================================================================
+
+Position 16
+FEN: 8/2p5/3p4/3P4/2P5/8/8/4K2k w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0184s
+STDOUT:
+Current Evaluation: 45
+PV: e1d1, h1h2, d1c1, h2h1, c1b1, h1h2
+Depth 6 complete with 0 researches.
+Best move found is e1d1, nodes taken: 581, score: 75
+
+NODES: 581| TIME: 0.00284949| NPS: 203896
+
+[Python]
+Return code: 0
+Time: 0.1998s
+STDOUT:
+Current Evaluation: 4.5
+PV line: e1f2 h1h2 f2f1 h2h1 f1f2 h1h2 f2f1
+Depth 6 complete, best move found is e1f2, nodes taken: 486
+NODES: 486 | TIME: 0.1 | NPS: 4860.0
+
+================================================================================
+
+Position 17
+FEN: r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0567s
+STDOUT:
+Current Evaluation: 0
+PV: a1a8, e8f7, a8h8, f7g7, h1h7, g7f6
+Depth 6 complete with 1 researches.
+Best move found is a1a8, nodes taken: 6448, score: 1045
+
+NODES: 6448| TIME: 0.0418903| NPS: 153926
+
+[Python]
+Return code: 0
+Time: 0.9101s
+STDOUT:
+Current Evaluation: 0.0
+PV line: h1h8 e8f7 h8a8 f7g7 a1a7 g7h6
+Depth 6 complete, best move found is h1h8, nodes taken: 3117
+NODES: 3117 | TIME: 0.81 | NPS: 3848.15
+
+================================================================================
+
+Position 18
+FEN: 4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0238s
+STDOUT:
+Current Evaluation: 5
+PV: e5d6, e8d7, e1f1, d7d6
+Depth 6 complete with 0 researches.
+Best move found is e5d6, nodes taken: 1072, score: 0
+
+NODES: 1072| TIME: 0.00558599| NPS: 191909
+
+[Python]
+Return code: 0
+Time: 0.2023s
+STDOUT:
+Current Evaluation: 0.5
+PV line: e5d6 e8d7 e1f1 d7d6
+Depth 6 complete, best move found is e5d6, nodes taken: 485
+NODES: 485 | TIME: 0.1 | NPS: 4850.0
+
+================================================================================
+
+Position 19
+FEN: 8/8/8/1pP5/8/8/8/4K2k w - b6 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0182s
+STDOUT:
+Current Evaluation: 40
+PV: c5b6, h1h2, b6b7, h2h3, b7b8q, h3h4
+Depth 6 complete with 1 researches.
+Best move found is c5b6, nodes taken: 526, score: 900
+
+NODES: 526| TIME: 0.00246957| NPS: 212993
+
+[Python]
+Return code: 0
+Time: 0.1674s
+STDOUT:
+Current Evaluation: 4.0
+PV line: c5b6 h1h2 b6b7 h2h3 b7b8q h3h4
+Depth 6 complete, best move found is c5b6, nodes taken: 252
+NODES: 252 | TIME: 0.06 | NPS: 4200.0
+
+================================================================================
+
+Position 20
+FEN: rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.4013s
+STDOUT:
+Current Evaluation: 50
+PV: d1e2, b8c6, e3e4, d5e4, c3e4, f6d5
+Depth 6 complete with 0 researches.
+Best move found is d1e2, nodes taken: 159170, score: 25
+
+NODES: 159170| TIME: 1.38528| NPS: 114901
+
+[Python]
+Return code: 0
+Time: 3.5166s
+STDOUT:
+Current Evaluation: 5.0
+PV line: f1e1 b8c6 e3e4 f6e4 c3e4 d5e4
+Depth 6 complete, best move found is f1e1, nodes taken: 112797
+NODES: 112797 | TIME: 3.41 | NPS: 33078.3
+
+================================================================================
+
+Position 21
+FEN: r1bqk2r/pppp1ppp/2n5/2b1p3/2B1P1n1/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 4.3514s
+STDOUT:
+Current Evaluation: 55
+PV: f3g5, g4h6, g5f3, e8g8, c1g5, d8e8
+Depth 6 complete with 1 researches.
+Best move found is f3g5, nodes taken: 426839, score: 75
+
+NODES: 426839| TIME: 4.32699| NPS: 98645.8
+
+[Python]
+Return code: 0
+Time: 3.7668s
+STDOUT:
+Current Evaluation: 5.5
+PV line: c4f7 e8f7 f3g5 f7g8 d1g4 d7d5
+Depth 6 complete, best move found is c4f7, nodes taken: 77963
+NODES: 77963 | TIME: 3.66 | NPS: 21301.37
+
+================================================================================
+
+Position 22
+FEN: 2rq1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.0811s
+STDOUT:
+Current Evaluation: 85
+PV: e2e4, c6d4, c1e3, d8b6, a1b1, c8d8
+Depth 6 complete with 0 researches.
+Best move found is e2e4, nodes taken: 125693, score: 125
+
+NODES: 125693| TIME: 1.06344| NPS: 118195
+
+[Python]
+Return code: 0
+Time: 2.5075s
+STDOUT:
+Current Evaluation: 8.5
+PV line: e2e4 c6d4 c1f4 d8b6 a1b1 f8e8
+Depth 6 complete, best move found is e2e4, nodes taken: 101576
+NODES: 101576 | TIME: 2.39 | NPS: 42500.42
+
+================================================================================
+
+Position 23
+FEN: r4rk1/pp1n1ppp/2pbpn2/q7/3P4/1PN1PN2/PBQ2PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.4133s
+STDOUT:
+Current Evaluation: 25
+PV: e3e4, e6e5, d4e5, d6e5, f3e5, d7e5
+Depth 6 complete with 0 researches.
+Best move found is e3e4, nodes taken: 166198, score: 30
+
+NODES: 166198| TIME: 1.39138| NPS: 119449
+
+[Python]
+Return code: 0
+Time: 3.2938s
+STDOUT:
+Current Evaluation: 2.5
+PV line: e3e4 e6e5 d4e5 d6e5 f3e5 d7e5
+Depth 6 complete, best move found is e3e4, nodes taken: 134754
+NODES: 134754 | TIME: 3.19 | NPS: 42242.63
+
+================================================================================
+
+Position 24
+FEN: 3r2k1/5pp1/p2p1n1p/1p1P4/1P3P2/P1N3P1/5K1P/3R4 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.1292s
+STDOUT:
+Current Evaluation: -30
+PV: f2g1, d8e8, d1f1, e8e3, f1c1, e3e8
+Depth 6 complete with 0 researches.
+Best move found is f2g1, nodes taken: 13928, score: -5
+
+NODES: 13928| TIME: 0.112842| NPS: 123429
+
+[Python]
+Return code: 0
+Time: 1.1238s
+STDOUT:
+Current Evaluation: -3.0
+PV line: f2g1 d8e8 d1f1 e8e3 f1c1 e3e8
+Depth 6 complete, best move found is f2g1, nodes taken: 13897
+NODES: 13897 | TIME: 1.02 | NPS: 13624.51
+
+================================================================================
+
+Position 25
+FEN: 8/8/2k5/8/8/2K5/2Q5/7q w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.1064s
+STDOUT:
+Current Evaluation: 25
+PV: c3b2, c6b7, c2b3, b7a8, b3a4, a8b8, a4f4
+Depth 6 complete with 0 researches.
+Best move found is c3b2, nodes taken: 11791, score: 10
+
+NODES: 11791| TIME: 0.084654| NPS: 139285
+
+[Python]
+Return code: 0
+Time: 1.2291s
+STDOUT:
+Current Evaluation: 2.5
+PV line: c3b2 c6b7 c2b3 b7a8 b3a4 a8b8
+Depth 6 complete, best move found is c3b2, nodes taken: 11611
+NODES: 11611 | TIME: 1.13 | NPS: 10275.22
+
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Pos 01: C++ rc=0 0.2675s | Python rc=0 1.0497s | FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Pos 02: C++ rc=0 5.1681s | Python rc=0 6.5584s | FEN=r3kb1r/pppb1ppp/2n1p3/qB6/3P4/1QP1PN2/P4PPP/R1B1K2R w KQkq - 0 1
+Pos 03: C++ rc=0 1.3266s | Python rc=0 3.4616s | FEN=r1bq1rk1/pppn1ppp/3bpn2/3p4/3P4/2NBPN2/PPQ2PPP/R1B2RK1 w - - 0 1
+Pos 04: C++ rc=0 6.2570s | Python rc=0 11.1903s | FEN=2r2rk1/1bqnbppp/p3pn2/1p6/3P4/1BN1PN2/PPQ2PPP/2RR2K1 w - - 0 1
+Pos 05: C++ rc=0 1.0840s | Python rc=0 2.7283s | FEN=r2q1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+Pos 06: C++ rc=0 0.5307s | Python rc=0 2.1642s | FEN=4rrk1/1pp1qppp/p1np1n2/8/2P5/1PN1PN2/PB1Q1PPP/2RR2K1 w - - 0 1
+Pos 07: C++ rc=0 4.1491s | Python rc=0 7.9670s | FEN=r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+Pos 08: C++ rc=0 0.7895s | Python rc=0 3.0974s | FEN=r2q1rk1/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1
+Pos 09: C++ rc=0 2.3952s | Python rc=0 4.7238s | FEN=2r2rk1/pp1nqppp/2pbpn2/3p4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 1
+Pos 10: C++ rc=0 2.2611s | Python rc=0 4.6508s | FEN=r1bq1rk1/pp3ppp/2n1pn2/2bp4/2P5/2NP1NP1/PPQ1PPBP/R1B2RK1 w - - 0 1
+Pos 11: C++ rc=0 0.0154s | Python rc=0 0.1191s | FEN=8/8/8/3k4/8/4K3/8/8 w - - 0 1
+Pos 12: C++ rc=0 0.0231s | Python rc=0 0.4280s | FEN=8/8/8/3k4/8/4K3/6P1/8 w - - 0 1
+Pos 13: C++ rc=0 0.0223s | Python rc=0 0.3790s | FEN=8/8/8/2k5/8/2K5/5P2/8 w - - 0 1
+Pos 14: C++ rc=0 0.0159s | Python rc=0 0.1182s | FEN=8/8/3k4/8/3K4/8/8/8 w - - 0 1
+Pos 15: C++ rc=0 0.0224s | Python rc=0 0.3872s | FEN=6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1
+Pos 16: C++ rc=0 0.0184s | Python rc=0 0.1998s | FEN=8/2p5/3p4/3P4/2P5/8/8/4K2k w - - 0 1
+Pos 17: C++ rc=0 0.0567s | Python rc=0 0.9101s | FEN=r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1
+Pos 18: C++ rc=0 0.0238s | Python rc=0 0.2023s | FEN=4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1
+Pos 19: C++ rc=0 0.0182s | Python rc=0 0.1674s | FEN=8/8/8/1pP5/8/8/8/4K2k w - b6 0 1
+Pos 20: C++ rc=0 1.4013s | Python rc=0 3.5166s | FEN=rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 1
+Pos 21: C++ rc=0 4.3514s | Python rc=0 3.7668s | FEN=r1bqk2r/pppp1ppp/2n5/2b1p3/2B1P1n1/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+Pos 22: C++ rc=0 1.0811s | Python rc=0 2.5075s | FEN=2rq1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+Pos 23: C++ rc=0 1.4133s | Python rc=0 3.2938s | FEN=r4rk1/pp1n1ppp/2pbpn2/q7/3P4/1PN1PN2/PBQ2PPP/2RR2K1 w - - 0 1
+Pos 24: C++ rc=0 0.1292s | Python rc=0 1.1238s | FEN=3r2k1/5pp1/p2p1n1p/1p1P4/1P3P2/P1N3P1/5K1P/3R4 w - - 0 1
+Pos 25: C++ rc=0 0.1064s | Python rc=0 1.2291s | FEN=8/8/2k5/8/8/2K5/2Q5/7q w - - 0 1
+
+Total C++ time: 32.9278s
+Total Python time: 65.9400s

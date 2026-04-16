@@ -1,0 +1,609 @@
+C++ engine suite run
+Depth: 7
+Command: ./build/engine <fen> <depth>
+====================================================================================================
+
+Position 1
+FEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Return code: 0
+Wall time: 1.318344s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 0
+PV: e2e4, b8c6, g1f3, g8f6, e4e5, f6d5, b1c3
+Depth 7 complete with 1 researches.
+Best move found is e2e4, nodes taken: 119892, score: 35
+
+NODES: 119892| TIME: 1.29818| NPS: 92353.7
+DEBUG
+	positions: 119892
+	time: 1.29818
+	positions per second: 92353.7
+	TT move orders: 5228
+	TT hits: 3456
+	TT length: 11253
+	KT move orders: 21224
+	KT move stores: 10692
+	avg beta cutoff move num: 6.58287
+
+====================================================================================================
+
+Position 2
+FEN: r3kb1r/pppb1ppp/2n1p3/qB6/3P4/1QP1PN2/P4PPP/R1B1K2R w KQkq - 0 1
+Return code: 0
+Wall time: 5.324258s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 5
+PV: e1g1, f8d6, e3e4, a7a6, b5c4, e8g8, c1e3
+Depth 7 complete with 0 researches.
+Best move found is e1g1, nodes taken: 622800, score: 30
+
+NODES: 622800| TIME: 5.30481| NPS: 117403
+DEBUG
+	positions: 622800
+	time: 5.30481
+	positions per second: 117403
+	TT move orders: 10452
+	TT hits: 13628
+	TT length: 104255
+	KT move orders: 41744
+	KT move stores: 29826
+	avg beta cutoff move num: 7.54311
+
+====================================================================================================
+
+Position 3
+FEN: r1bq1rk1/pppn1ppp/3bpn2/3p4/3P4/2NBPN2/PPQ2PPP/R1B2RK1 w - - 0 1
+Return code: 0
+Wall time: 2.976273s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: -95
+PV: e3e4, f6e4, c3e4, d5e4, d3e4, d7f6, c1g5
+Depth 7 complete with 0 researches.
+Best move found is e3e4, nodes taken: 355815, score: -65
+
+NODES: 355815| TIME: 2.95669| NPS: 120343
+DEBUG
+	positions: 355815
+	time: 2.95669
+	positions per second: 120343
+	TT move orders: 5859
+	TT hits: 10956
+	TT length: 58172
+	KT move orders: 26644
+	KT move stores: 17535
+	avg beta cutoff move num: 6.88432
+
+====================================================================================================
+
+Position 4
+FEN: 2r2rk1/1bqnbppp/p3pn2/1p6/3P4/1BN1PN2/PPQ2PPP/2RR2K1 w - - 0 1
+Return code: 0
+Wall time: 13.493747s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: -205
+PV: c2d3, c7b6, f3e5, d7e5, d4e5, f8d8, d3c2
+Depth 7 complete with 0 researches.
+Best move found is c2d3, nodes taken: 1505709, score: -210
+
+NODES: 1505709| TIME: 13.4659| NPS: 111816
+DEBUG
+	positions: 1505709
+	time: 13.4659
+	positions per second: 111816
+	TT move orders: 22027
+	TT hits: 36069
+	TT length: 258827
+	KT move orders: 88563
+	KT move stores: 67987
+	avg beta cutoff move num: 5.9077
+
+====================================================================================================
+
+Position 5
+FEN: r2q1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+Return code: 0
+Wall time: 4.480928s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 85
+PV: e2e4, c6d4, c3d5, e6g4, c1e3, d4f3, g2f3
+Depth 7 complete with 0 researches.
+Best move found is e2e4, nodes taken: 446767, score: 130
+
+NODES: 446767| TIME: 4.4634| NPS: 100096
+DEBUG
+	positions: 446767
+	time: 4.4634
+	positions per second: 100096
+	TT move orders: 4448
+	TT hits: 13123
+	TT length: 65386
+	KT move orders: 47588
+	KT move stores: 27373
+	avg beta cutoff move num: 7.1044
+
+====================================================================================================
+
+Position 6
+FEN: 4rrk1/1pp1qppp/p1np1n2/8/2P5/1PN1PN2/PB1Q1PPP/2RR2K1 w - - 0 1
+Return code: 0
+Wall time: 0.902841s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 295
+PV: c3d5, f6d5, c4d5, c6e5, f3d4, e7d7, e3e4
+Depth 7 complete with 0 researches.
+Best move found is c3d5, nodes taken: 98987, score: 340
+
+NODES: 98987| TIME: 0.886607| NPS: 111647
+DEBUG
+	positions: 98987
+	time: 0.886607
+	positions per second: 111647
+	TT move orders: 1833
+	TT hits: 3533
+	TT length: 11783
+	KT move orders: 10723
+	KT move stores: 5884
+	avg beta cutoff move num: 7.76792
+
+====================================================================================================
+
+Position 7
+FEN: r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+Return code: 0
+Wall time: 7.765472s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 50
+PV: f3g5, e8g8, g5f7, f8f7, c4f7, g8f7, c1g5
+Depth 7 complete with 0 researches.
+Best move found is f3g5, nodes taken: 891419, score: 45
+
+NODES: 891419| TIME: 7.74195| NPS: 115141
+DEBUG
+	positions: 891419
+	time: 7.74195
+	positions per second: 115141
+	TT move orders: 20557
+	TT hits: 24651
+	TT length: 117141
+	KT move orders: 66302
+	KT move stores: 47854
+	avg beta cutoff move num: 7.75639
+
+====================================================================================================
+
+Position 8
+FEN: r2q1rk1/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1
+Return code: 0
+Wall time: 1.459280s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 310
+PV: c4e6, f7e6, d3d4, e5d4, f3d4, e6e5, d4c6, b7c6
+Depth 7 complete with 0 researches.
+Best move found is c4e6, nodes taken: 161909, score: 340
+
+NODES: 161909| TIME: 1.44211| NPS: 112273
+DEBUG
+	positions: 161909
+	time: 1.44211
+	positions per second: 112273
+	TT move orders: 2380
+	TT hits: 3862
+	TT length: 16863
+	KT move orders: 12872
+	KT move stores: 7140
+	avg beta cutoff move num: 10.1903
+
+====================================================================================================
+
+Position 9
+FEN: 2r2rk1/pp1nqppp/2pbpn2/3p4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 1
+Return code: 0
+Wall time: 5.861425s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: -75
+PV: e3e4, f6e4, c3e4, d5e4, d3e4, d7f6, e4d3
+Depth 7 complete with 0 researches.
+Best move found is e3e4, nodes taken: 593734, score: -60
+
+NODES: 593734| TIME: 5.83559| NPS: 101744
+DEBUG
+	positions: 593734
+	time: 5.83559
+	positions per second: 101744
+	TT move orders: 9863
+	TT hits: 14202
+	TT length: 90715
+	KT move orders: 33857
+	KT move stores: 21360
+	avg beta cutoff move num: 9.39429
+
+====================================================================================================
+
+Position 10
+FEN: r1bq1rk1/pp3ppp/2n1pn2/2bp4/2P5/2NP1NP1/PPQ1PPBP/R1B2RK1 w - - 0 1
+Return code: 0
+Wall time: 10.206774s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 85
+PV: c1f4, d5c4, d3c4, c6d4, c2d3, d8b6, f3d4, c5d4
+Depth 7 complete with 0 researches.
+Best move found is c1f4, nodes taken: 1025481, score: 120
+
+NODES: 1025481| TIME: 10.1845| NPS: 100691
+DEBUG
+	positions: 1025481
+	time: 10.1845
+	positions per second: 100691
+	TT move orders: 11315
+	TT hits: 24486
+	TT length: 153873
+	KT move orders: 108199
+	KT move stores: 65763
+	avg beta cutoff move num: 6.22835
+
+====================================================================================================
+
+Position 11
+FEN: 8/8/8/3k4/8/4K3/8/8 w - - 0 1
+Return code: 0
+Wall time: 0.019977s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 20
+PV: 
+Depth 7 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+NODES: 0| TIME: 3.0771e-05| NPS: 0
+DEBUG
+	positions: 0
+	time: 3.0771e-05
+	positions per second: 0
+	TT move orders: 0
+	TT hits: 0
+	TT length: 0
+	KT move orders: 0
+	KT move stores: 0
+	avg beta cutoff move num: inf
+
+====================================================================================================
+
+Position 12
+FEN: 8/8/8/3k4/8/4K3/6P1/8 w - - 0 1
+Return code: 0
+Wall time: 0.031725s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 130
+PV: e3f2, d5c6, f2f1, c6b7, f1f2, b7b8, f2g1
+Depth 7 complete with 0 researches.
+Best move found is e3f2, nodes taken: 2880, score: 110
+
+NODES: 2880| TIME: 0.0148009| NPS: 194583
+DEBUG
+	positions: 2880
+	time: 0.0148009
+	positions per second: 194583
+	TT move orders: 255
+	TT hits: 554
+	TT length: 265
+	KT move orders: 514
+	KT move stores: 469
+	avg beta cutoff move num: 3.20479
+
+====================================================================================================
+
+Position 13
+FEN: 8/8/8/2k5/8/2K5/5P2/8 w - - 0 1
+Return code: 0
+Wall time: 0.033209s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 120
+PV: c3b2, c5b6, b2a1, b6a7, a1a2, a7b8, a2b1
+Depth 7 complete with 0 researches.
+Best move found is c3b2, nodes taken: 2576, score: 110
+
+NODES: 2576| TIME: 0.0138826| NPS: 185556
+DEBUG
+	positions: 2576
+	time: 0.0138826
+	positions per second: 185556
+	TT move orders: 224
+	TT hits: 491
+	TT length: 224
+	KT move orders: 431
+	KT move stores: 410
+	avg beta cutoff move num: 3.22802
+
+====================================================================================================
+
+Position 14
+FEN: 8/8/3k4/8/3K4/8/8/8 w - - 0 1
+Return code: 0
+Wall time: 0.017467s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: -20
+PV: 
+Depth 7 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+NODES: 0| TIME: 2.6334e-05| NPS: 0
+DEBUG
+	positions: 0
+	time: 2.6334e-05
+	positions per second: 0
+	TT move orders: 0
+	TT hits: 0
+	TT length: 0
+	KT move orders: 0
+	KT move stores: 0
+	avg beta cutoff move num: inf
+
+====================================================================================================
+
+Position 15
+FEN: 6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1
+Return code: 0
+Wall time: 0.030021s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 0
+PV: g1h1, g8h8, h1g1, h8g8, g1h1, g8h8, h1g1, h8g8
+Depth 7 complete with 0 researches.
+Best move found is g1h1, nodes taken: 1706, score: 0
+
+NODES: 1706| TIME: 0.0128935| NPS: 132314
+DEBUG
+	positions: 1706
+	time: 0.0128935
+	positions per second: 132314
+	TT move orders: 115
+	TT hits: 114
+	TT length: 200
+	KT move orders: 477
+	KT move stores: 262
+	avg beta cutoff move num: 3.23423
+
+====================================================================================================
+
+Position 16
+FEN: 8/2p5/3p4/3P4/2P5/8/8/4K2k w - - 0 1
+Return code: 0
+Wall time: 0.026659s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 45
+PV: e1d1, h1h2, d1c1, h2g2, c1b1, g2h1, b1a1
+Depth 7 complete with 0 researches.
+Best move found is e1d1, nodes taken: 1365, score: 65
+
+NODES: 1365| TIME: 0.00745305| NPS: 183147
+DEBUG
+	positions: 1365
+	time: 0.00745305
+	positions per second: 183147
+	TT move orders: 109
+	TT hits: 220
+	TT length: 157
+	KT move orders: 224
+	KT move stores: 204
+	avg beta cutoff move num: 3.11475
+
+====================================================================================================
+
+Position 17
+FEN: r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1
+Return code: 0
+Wall time: 0.148707s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 0
+PV: a1a8, e8d7, a8a7, d7c6, h1h8, c6b6, a7g7
+Depth 7 complete with 0 researches.
+Best move found is a1a8, nodes taken: 21700, score: 1050
+
+NODES: 21700| TIME: 0.130687| NPS: 166046
+DEBUG
+	positions: 21700
+	time: 0.130687
+	positions per second: 166046
+	TT move orders: 1247
+	TT hits: 2638
+	TT length: 2223
+	KT move orders: 3394
+	KT move stores: 2880
+	avg beta cutoff move num: 4.23877
+
+====================================================================================================
+
+Position 18
+FEN: 4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1
+Return code: 0
+Wall time: 0.030364s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 5
+PV: e5d6, e8d7, e1f1, d7d6
+Depth 7 complete with 0 researches.
+Best move found is e5d6, nodes taken: 3441, score: 0
+
+NODES: 3441| TIME: 0.0155352| NPS: 221498
+DEBUG
+	positions: 3441
+	time: 0.0155352
+	positions per second: 221498
+	TT move orders: 280
+	TT hits: 690
+	TT length: 504
+	KT move orders: 653
+	KT move stores: 590
+	avg beta cutoff move num: 2.82591
+
+====================================================================================================
+
+Position 19
+FEN: 8/8/8/1pP5/8/8/8/4K2k w - b6 0 1
+Return code: 0
+Wall time: 0.019030s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 40
+PV: c5b6, h1h2, b6b7, h2h3, b7b8q, h3h4, b8d6
+Depth 7 complete with 0 researches.
+Best move found is c5b6, nodes taken: 878, score: 915
+
+NODES: 878| TIME: 0.0040543| NPS: 216560
+DEBUG
+	positions: 878
+	time: 0.0040543
+	positions per second: 216560
+	TT move orders: 99
+	TT hits: 141
+	TT length: 78
+	KT move orders: 137
+	KT move stores: 137
+	avg beta cutoff move num: 2.87549
+
+====================================================================================================
+
+Position 20
+FEN: rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 1
+Return code: 0
+Wall time: 2.657835s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 50
+PV: e3e4, d5e4, c3e4, f6e4, d3e4, b8c6, c1e3
+Depth 7 complete with 0 researches.
+Best move found is e3e4, nodes taken: 305824, score: 40
+
+NODES: 305824| TIME: 2.63862| NPS: 115903
+DEBUG
+	positions: 305824
+	time: 2.63862
+	positions per second: 115903
+	TT move orders: 5894
+	TT hits: 8771
+	TT length: 53104
+	KT move orders: 24139
+	KT move stores: 19015
+	avg beta cutoff move num: 6.00405
+
+====================================================================================================
+
+Position 21
+FEN: r1bqk2r/pppp1ppp/2n5/2b1p3/2B1P1n1/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+Return code: 0
+Wall time: 4.391582s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 55
+PV: c4f7, e8f7, f3g5, f7g8, d1g4, d7d5, g5e6
+Depth 7 complete with 0 researches.
+Best move found is c4f7, nodes taken: 493815, score: 80
+
+NODES: 493815| TIME: 4.37412| NPS: 112895
+DEBUG
+	positions: 493815
+	time: 4.37412
+	positions per second: 112895
+	TT move orders: 23794
+	TT hits: 18660
+	TT length: 59593
+	KT move orders: 41305
+	KT move stores: 28709
+	avg beta cutoff move num: 6.19465
+
+====================================================================================================
+
+Position 22
+FEN: 2rq1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+Return code: 0
+Wall time: 5.188904s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 85
+PV: e2e4, c6d4, c1e3, e6g4, c3d5, d4f3, g2f3
+Depth 7 complete with 0 researches.
+Best move found is e2e4, nodes taken: 454650, score: 130
+
+NODES: 454650| TIME: 5.17018| NPS: 87936.9
+DEBUG
+	positions: 454650
+	time: 5.17018
+	positions per second: 87936.9
+	TT move orders: 4289
+	TT hits: 12465
+	TT length: 68646
+	KT move orders: 46886
+	KT move stores: 27726
+	avg beta cutoff move num: 6.96177
+
+====================================================================================================
+
+Position 23
+FEN: r4rk1/pp1n1ppp/2pbpn2/q7/3P4/1PN1PN2/PBQ2PPP/2RR2K1 w - - 0 1
+Return code: 0
+Wall time: 3.765625s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 25
+PV: e3e4, e6e5, d4e5, d6e5, f3e5, d7e5, d1e1
+Depth 7 complete with 0 researches.
+Best move found is e3e4, nodes taken: 341604, score: 30
+
+NODES: 341604| TIME: 3.73977| NPS: 91343.6
+DEBUG
+	positions: 341604
+	time: 3.73977
+	positions per second: 91343.6
+	TT move orders: 6337
+	TT hits: 9132
+	TT length: 47684
+	KT move orders: 23858
+	KT move stores: 18762
+	avg beta cutoff move num: 7.78683
+
+====================================================================================================
+
+Position 24
+FEN: 3r2k1/5pp1/p2p1n1p/1p1P4/1P3P2/P1N3P1/5K1P/3R4 w - - 0 1
+Return code: 0
+Wall time: 0.884261s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: -30
+PV: f2g1, d8e8, g1f2, e8e7, d1d3, f6e4, f2g1
+Depth 7 complete with 0 researches.
+Best move found is f2g1, nodes taken: 109447, score: -10
+
+NODES: 109447| TIME: 0.866726| NPS: 126276
+DEBUG
+	positions: 109447
+	time: 0.866726
+	positions per second: 126276
+	TT move orders: 2540
+	TT hits: 5487
+	TT length: 15589
+	KT move orders: 18078
+	KT move stores: 10681
+	avg beta cutoff move num: 5.45705
+
+====================================================================================================
+
+Position 25
+FEN: 8/8/2k5/8/8/2K5/2Q5/7q w - - 0 1
+Return code: 0
+Wall time: 0.202124s
+----------------------------------------------------------------------------------------------------
+Current Evaluation: 25
+PV: c3b2, c6b7, c2b3, b7a8, b3a4, a8b8, a4f4, b8a7
+Depth 7 complete with 0 researches.
+Best move found is c3b2, nodes taken: 30241, score: 25
+
+NODES: 30241| TIME: 0.186389| NPS: 162246
+DEBUG
+	positions: 30241
+	time: 0.186389
+	positions per second: 162246
+	TT move orders: 1454
+	TT hits: 8285
+	TT length: 2676
+	KT move orders: 4198
+	KT move stores: 3895
+	avg beta cutoff move num: 4.40202
+
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Positions run: 25
+Total wall time: 71.236831s

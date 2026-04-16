@@ -1,0 +1,1686 @@
+Engine comparison
+Depth: 6
+C++ command: ./build/engine <fen> <depth>
+Python command: pypy3 ./python/main.py <fen> <depth>
+================================================================================
+
+Position 1
+FEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.2792s
+STDOUT:
+Current Evaluation: 0
+PV: g1f3
+Depth 1 complete with 0 researches.
+Best move found is g1f3, nodes taken: 20, score: 50
+
+PV: g1f3, g8f6
+Depth 2 complete with 1 researches.
+Best move found is g1f3, nodes taken: 119, score: 0
+
+PV: g1f3, g8f6, b1c3
+Depth 3 complete with 1 researches.
+Best move found is g1f3, nodes taken: 683, score: 50
+
+PV: g1f3, g8f6, b1c3, b8c6
+Depth 4 complete with 1 researches.
+Best move found is g1f3, nodes taken: 1914, score: 0
+
+PV: g1f3, g8f6, b1c3, b8c6, e2e4
+Depth 5 complete with 1 researches.
+Best move found is g1f3, nodes taken: 9299, score: 40
+
+PV: g1f3, g8f6, b1c3, b8c6, e2e4, d7d5
+Depth 6 complete with 1 researches.
+Best move found is g1f3, nodes taken: 22998, score: 0
+
+0.36
+DEBUG
+	positions: 22998
+	time: 0.262901
+	positions per second: 87477.8
+	TT move orders: 1242
+	TT hits: 580
+	TT length: 1635
+	KT move orders: 5307
+	KT move stores: 2820
+	avg beta cutoff move num: 4.82112
+
+[Python]
+Return code: 0
+Time: 1.1015s
+STDOUT:
+Current Evaluation: 0.0
+PV line: g1f3
+Depth 1 complete, best move found is g1f3, nodes taken: 20
+PV line: g1f3 g8f6
+Depth 2 complete, best move found is g1f3, nodes taken: 60
+PV line: g1f3 g8f6 b1c3
+Depth 3 complete, best move found is g1f3, nodes taken: 583
+PV line: g1f3 g8f6 b1c3 b8c6
+Depth 4 complete, best move found is g1f3, nodes taken: 873
+PV line: g1f3 g8f6 b1c3 b8c6 e2e4
+Depth 5 complete, best move found is g1f3, nodes taken: 7880
+PV line: g1f3 g8f6 b1c3 b8c6 e2e4 e7e5
+Depth 6 complete, best move found is g1f3, nodes taken: 10465
+v0.36 DEBUG: {'positions': 10465, 'tt move orders': 210, 'tt hits': 199, 'killer move orders': 2462, 'killer move stores': 1184, 'beta cutoff move num': 5.47675962815405, 'time': 1.01, 'positions per second': 10361.39, 'tt length': 1004}
+v0.36 Average Time: 1.01, Total Time: 1.01
+
+================================================================================
+
+Position 2
+FEN: r3kb1r/pppb1ppp/2n1p3/qB6/3P4/1QP1PN2/P4PPP/R1B1K2R w KQkq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 2.2510s
+STDOUT:
+Current Evaluation: 5
+PV: e1g1
+Depth 1 complete with 0 researches.
+Best move found is e1g1, nodes taken: 84, score: 35
+
+PV: e1g1, f8d6
+Depth 2 complete with 0 researches.
+Best move found is e1g1, nodes taken: 1331, score: 15
+
+PV: e1g1, f8d6, e3e4
+Depth 3 complete with 0 researches.
+Best move found is e1g1, nodes taken: 4154, score: 35
+
+PV: e3e4, f8b4, c3b4, a5b5
+Depth 4 complete with 0 researches.
+Best move found is e3e4, nodes taken: 14822, score: 15
+
+PV: e3e4, f8d6, e4e5, d6e7, e1g1
+Depth 5 complete with 0 researches.
+Best move found is e3e4, nodes taken: 65559, score: 30
+
+PV: e1g1, f8d6, e3e4, a7a6, b5c4, e8g8
+Depth 6 complete with 0 researches.
+Best move found is e1g1, nodes taken: 215164, score: 15
+
+0.36
+DEBUG
+	positions: 215164
+	time: 2.23489
+	positions per second: 96275
+	TT move orders: 1249
+	TT hits: 1139
+	TT length: 12245
+	KT move orders: 16915
+	KT move stores: 13412
+	avg beta cutoff move num: 5.14528
+
+[Python]
+Return code: 0
+Time: 6.9073s
+STDOUT:
+Current Evaluation: 0.5
+PV line: e1g1
+Depth 1 complete, best move found is e1g1, nodes taken: 84
+PV line: e1g1 f8d6
+Depth 2 complete, best move found is e1g1, nodes taken: 1248
+PV line: e1g1 f8d6 e3e4
+Depth 3 complete, best move found is e1g1, nodes taken: 4078
+PV line: e3e4 f8b4 c3b4 a5b5
+Depth 4 complete, best move found is e3e4, nodes taken: 12190
+PV line: e3e4 f8d6 e4e5 d6e7 e1g1
+Depth 5 complete, best move found is e3e4, nodes taken: 58772
+PV line: e1g1 f8d6 e3e4 a7a6 b5c4 e8g8
+Depth 6 complete, best move found is e1g1, nodes taken: 185083
+v0.36 DEBUG: {'positions': 185083, 'tt move orders': 1268, 'tt hits': 1157, 'killer move orders': 17530, 'killer move stores': 12999, 'beta cutoff move num': 5.138037759207676, 'time': 6.8, 'positions per second': 27218.09, 'tt length': 11830}
+v0.36 Average Time: 6.8, Total Time: 6.8
+
+================================================================================
+
+Position 3
+FEN: r1bq1rk1/pppn1ppp/3bpn2/3p4/3P4/2NBPN2/PPQ2PPP/R1B2RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.0936s
+STDOUT:
+Current Evaluation: -95
+PV: e3e4
+Depth 1 complete with 0 researches.
+Best move found is e3e4, nodes taken: 82, score: -75
+
+PV: e3e4, d8e7
+Depth 2 complete with 0 researches.
+Best move found is e3e4, nodes taken: 1845, score: -80
+
+PV: e3e4, f6e4, c3e4
+Depth 3 complete with 0 researches.
+Best move found is e3e4, nodes taken: 6123, score: -75
+
+PV: e3e4, f6e4, c3e4, d5e4
+Depth 4 complete with 0 researches.
+Best move found is e3e4, nodes taken: 12481, score: -75
+
+PV: e3e4, f6e4, c3e4, d5e4, d3e4
+Depth 5 complete with 0 researches.
+Best move found is e3e4, nodes taken: 34961, score: -75
+
+PV: e3e4, f6e4, c3e4, d5e4, d3e4, d7f6
+Depth 6 complete with 0 researches.
+Best move found is e3e4, nodes taken: 120554, score: -80
+
+0.36
+DEBUG
+	positions: 120554
+	time: 1.07194
+	positions per second: 112463
+	TT move orders: 822
+	TT hits: 595
+	TT length: 5830
+	KT move orders: 10517
+	KT move stores: 6604
+	avg beta cutoff move num: 4.56837
+
+[Python]
+Return code: 0
+Time: 5.1836s
+STDOUT:
+Current Evaluation: -9.5
+PV line: e3e4
+Depth 1 complete, best move found is e3e4, nodes taken: 82
+PV line: e3e4 f8e8
+Depth 2 complete, best move found is e3e4, nodes taken: 1522
+PV line: e3e4 f6e4 c3e4
+Depth 3 complete, best move found is e3e4, nodes taken: 5123
+PV line: e3e4 f6e4 c3e4 d5e4
+Depth 4 complete, best move found is e3e4, nodes taken: 15752
+PV line: e3e4 f6e4 c3e4 d5e4 d3e4
+Depth 5 complete, best move found is e3e4, nodes taken: 41421
+PV line: e3e4 f6e4 c3e4 d5e4 d3e4 d7f6
+Depth 6 complete, best move found is e3e4, nodes taken: 130601
+v0.36 DEBUG: {'positions': 130601, 'tt move orders': 902, 'tt hits': 616, 'killer move orders': 10246, 'killer move stores': 6855, 'beta cutoff move num': 4.498731730885373, 'time': 5.08, 'positions per second': 25708.86, 'tt length': 6014}
+v0.36 Average Time: 5.08, Total Time: 5.08
+
+================================================================================
+
+Position 4
+FEN: 2r2rk1/1bqnbppp/p3pn2/1p6/3P4/1BN1PN2/PPQ2PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 4.7992s
+STDOUT:
+Current Evaluation: -205
+PV: e3e4
+Depth 1 complete with 0 researches.
+Best move found is e3e4, nodes taken: 149, score: -185
+
+PV: e3e4, e6e5
+Depth 2 complete with 0 researches.
+Best move found is e3e4, nodes taken: 4152, score: -205
+
+PV: c2d2, c7d6, d2d3
+Depth 3 complete with 0 researches.
+Best move found is c2d2, nodes taken: 15552, score: -210
+
+PV: c2b1, b5b4, c3d5, c7d6
+Depth 4 complete with 0 researches.
+Best move found is c2b1, nodes taken: 56169, score: -215
+
+PV: c2d3, e6e5, c3d5, c7d6, e3e4
+Depth 5 complete with 0 researches.
+Best move found is c2d3, nodes taken: 192139, score: -210
+
+PV: c2d3, c7b6, e3e4, b5b4, e4e5, b4c3
+Depth 6 complete with 0 researches.
+Best move found is c2d3, nodes taken: 540324, score: -215
+
+0.36
+DEBUG
+	positions: 540324
+	time: 4.7808
+	positions per second: 113020
+	TT move orders: 2895
+	TT hits: 1704
+	TT length: 19762
+	KT move orders: 31331
+	KT move stores: 22468
+	avg beta cutoff move num: 5.09655
+
+[Python]
+Return code: 0
+Time: 9.0876s
+STDOUT:
+Current Evaluation: -20.5
+PV line: e3e4
+Depth 1 complete, best move found is e3e4, nodes taken: 149
+PV line: e3e4 e6e5
+Depth 2 complete, best move found is e3e4, nodes taken: 3697
+PV line: c2d2 c7d6 d2d3
+Depth 3 complete, best move found is c2d2, nodes taken: 15771
+PV line: c2b1 b5b4 c3d5 c7d6
+Depth 4 complete, best move found is c2b1, nodes taken: 64503
+PV line: c2d3 e6e5 c3d5 c7d6 e3e4
+Depth 5 complete, best move found is c2d3, nodes taken: 200419
+PV line: c2d3 c7b6 e3e4 b5b4 e4e5 b4c3
+Depth 6 complete, best move found is c2d3, nodes taken: 579658
+v0.36 DEBUG: {'positions': 579658, 'tt move orders': 3036, 'tt hits': 1580, 'killer move orders': 32526, 'killer move stores': 23613, 'beta cutoff move num': 5.089378368426338, 'time': 8.97, 'positions per second': 64621.85, 'tt length': 20778}
+v0.36 Average Time: 8.97, Total Time: 8.97
+
+================================================================================
+
+Position 5
+FEN: r2q1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.0579s
+STDOUT:
+Current Evaluation: 85
+PV: e2e4
+Depth 1 complete with 0 researches.
+Best move found is e2e4, nodes taken: 42, score: 125
+
+PV: e2e4, c6d4
+Depth 2 complete with 0 researches.
+Best move found is e2e4, nodes taken: 1255, score: 115
+
+PV: e2e4, d8b6, d1c2
+Depth 3 complete with 0 researches.
+Best move found is e2e4, nodes taken: 4062, score: 130
+
+PV: e2e4, d8d7, c1e3, c6e5
+Depth 4 complete with 0 researches.
+Best move found is e2e4, nodes taken: 9107, score: 130
+
+PV: e2e4, c6d4, c1e3, d8b6, a1b1
+Depth 5 complete with 0 researches.
+Best move found is e2e4, nodes taken: 41859, score: 130
+
+PV: e2e4, c6d4, c1e3, d8b6, a1b1, f8e8
+Depth 6 complete with 0 researches.
+Best move found is e2e4, nodes taken: 112985, score: 125
+
+0.36
+DEBUG
+	positions: 112985
+	time: 1.04141
+	positions per second: 108492
+	TT move orders: 988
+	TT hits: 658
+	TT length: 3591
+	KT move orders: 9031
+	KT move stores: 4499
+	avg beta cutoff move num: 9.03169
+
+[Python]
+Return code: 0
+Time: 2.6850s
+STDOUT:
+Current Evaluation: 8.5
+PV line: e2e4
+Depth 1 complete, best move found is e2e4, nodes taken: 42
+PV line: e2e4 c6e5
+Depth 2 complete, best move found is e2e4, nodes taken: 691
+PV line: e2e4 d8b6 c3d5
+Depth 3 complete, best move found is e2e4, nodes taken: 2830
+PV line: e2e4 d8d7 c1f4 c6d4
+Depth 4 complete, best move found is e2e4, nodes taken: 7170
+PV line: e2e4 c6e5 c1f4 d8b6 f3e5
+Depth 5 complete, best move found is e2e4, nodes taken: 40930
+PV line: e2e4 c6d4 c1f4 d8b6 a1b1 f8e8
+Depth 6 complete, best move found is e2e4, nodes taken: 110161
+v0.36 DEBUG: {'positions': 110161, 'tt move orders': 1012, 'tt hits': 687, 'killer move orders': 8003, 'killer move stores': 4808, 'beta cutoff move num': 8.562413207838297, 'time': 2.58, 'positions per second': 42698.06, 'tt length': 3889}
+v0.36 Average Time: 2.58, Total Time: 2.58
+
+================================================================================
+
+Position 6
+FEN: 4rrk1/1pp1qppp/p1np1n2/8/2P5/1PN1PN2/PB1Q1PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.4962s
+STDOUT:
+Current Evaluation: 295
+PV: f3d4
+Depth 1 complete with 0 researches.
+Best move found is f3d4, nodes taken: 68, score: 305
+
+PV: c3d5, f6d5
+Depth 2 complete with 0 researches.
+Best move found is c3d5, nodes taken: 984, score: 320
+
+PV: c3d5, f6d5, c4d5
+Depth 3 complete with 0 researches.
+Best move found is c3d5, nodes taken: 2885, score: 320
+
+PV: c3d5, f6d5, c4d5, c6e5
+Depth 4 complete with 0 researches.
+Best move found is c3d5, nodes taken: 5667, score: 310
+
+PV: c3d5, f6d5, c4d5, c6e5, e3e4
+Depth 5 complete with 0 researches.
+Best move found is c3d5, nodes taken: 12423, score: 320
+
+PV: c3d5, f6d5, c4d5, c6e5, e3e4, e5f3, g2f3
+Depth 6 complete with 0 researches.
+Best move found is c3d5, nodes taken: 47533, score: 320
+
+0.36
+DEBUG
+	positions: 47533
+	time: 0.480549
+	positions per second: 98914
+	TT move orders: 471
+	TT hits: 563
+	TT length: 2766
+	KT move orders: 5059
+	KT move stores: 3206
+	avg beta cutoff move num: 4.80085
+
+[Python]
+Return code: 0
+Time: 2.3617s
+STDOUT:
+Current Evaluation: 29.5
+PV line: f3d4
+Depth 1 complete, best move found is f3d4, nodes taken: 69
+PV line: c3d5 f6d5
+Depth 2 complete, best move found is c3d5, nodes taken: 977
+PV line: c3d5 f6d5 c4d5
+Depth 3 complete, best move found is c3d5, nodes taken: 2878
+PV line: c3d5 f6d5 c4d5 c6e5
+Depth 4 complete, best move found is c3d5, nodes taken: 5981
+PV line: c3d5 f6d5 c4d5 c6e5 e3e4
+Depth 5 complete, best move found is c3d5, nodes taken: 12844
+PV line: c3d5 f6d5 c4d5 c6e5 e3e4 e5f3 g2f3
+Depth 6 complete, best move found is c3d5, nodes taken: 48425
+v0.36 DEBUG: {'positions': 48425, 'tt move orders': 539, 'tt hits': 589, 'killer move orders': 4959, 'killer move stores': 3288, 'beta cutoff move num': 4.763929618768328, 'time': 2.26, 'positions per second': 21426.99, 'tt length': 2788}
+v0.36 Average Time: 2.26, Total Time: 2.26
+
+================================================================================
+
+Position 7
+FEN: r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 3.1569s
+STDOUT:
+Current Evaluation: 50
+PV: c1g5
+Depth 1 complete with 0 researches.
+Best move found is c1g5, nodes taken: 103, score: 65
+
+PV: c1e3, d7d6
+Depth 2 complete with 0 researches.
+Best move found is c1e3, nodes taken: 831, score: 50
+
+PV: c1e3, c5e3, f2e3
+Depth 3 complete with 0 researches.
+Best move found is c1e3, nodes taken: 2927, score: 60
+
+PV: c4b5, d8e7, c3d5, f6d5
+Depth 4 complete with 0 researches.
+Best move found is c4b5, nodes taken: 19040, score: 45
+
+PV: c1e3, c5e3, f2e3, e8g8, d3d4
+Depth 5 complete with 0 researches.
+Best move found is c1e3, nodes taken: 66660, score: 50
+
+PV: c1g5, e8g8, c3d5, d7d6, d5f6, g7f6
+Depth 6 complete with 0 researches.
+Best move found is c1g5, nodes taken: 264341, score: 35
+
+0.36
+DEBUG
+	positions: 264341
+	time: 3.14138
+	positions per second: 84148
+	TT move orders: 1977
+	TT hits: 1990
+	TT length: 16422
+	KT move orders: 22180
+	KT move stores: 18295
+	avg beta cutoff move num: 4.34713
+
+[Python]
+Return code: 0
+Time: 8.7084s
+STDOUT:
+Current Evaluation: 5.0
+PV line: c1g5
+Depth 1 complete, best move found is c1g5, nodes taken: 103
+PV line: c1e3 d7d6
+Depth 2 complete, best move found is c1e3, nodes taken: 891
+PV line: c1e3 c5e3 f2e3
+Depth 3 complete, best move found is c1e3, nodes taken: 3009
+PV line: c4b5 d8e7 c3d5 f6d5
+Depth 4 complete, best move found is c4b5, nodes taken: 18427
+PV line: c1e3 c5e3 f2e3 e8g8 d3d4
+Depth 5 complete, best move found is c1e3, nodes taken: 66679
+PV line: c1g5 e8g8 c3d5 d7d6 d5f6 g7f6
+Depth 6 complete, best move found is c1g5, nodes taken: 281818
+v0.36 DEBUG: {'positions': 281818, 'tt move orders': 1970, 'tt hits': 1832, 'killer move orders': 22502, 'killer move stores': 18528, 'beta cutoff move num': 4.350379129806824, 'time': 8.53, 'positions per second': 33038.45, 'tt length': 16680}
+v0.36 Average Time: 8.53, Total Time: 8.53
+
+================================================================================
+
+Position 8
+FEN: r2q1rk1/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.5076s
+STDOUT:
+Current Evaluation: 310
+PV: c1e3
+Depth 1 complete with 0 researches.
+Best move found is c1e3, nodes taken: 69, score: 330
+
+PV: c4e6, f7e6
+Depth 2 complete with 0 researches.
+Best move found is c4e6, nodes taken: 666, score: 320
+
+PV: c4e6, f7e6, d3d4
+Depth 3 complete with 0 researches.
+Best move found is c4e6, nodes taken: 2390, score: 340
+
+PV: c4e6, f7e6, d3d4, f8e8
+Depth 4 complete with 0 researches.
+Best move found is c4e6, nodes taken: 6455, score: 335
+
+PV: c4e6, f7e6, d3d4, c6d4, f3d4
+Depth 5 complete with 0 researches.
+Best move found is c4e6, nodes taken: 19634, score: 350
+
+PV: c4e6, f7e6, d3d4, e5d4, f3d4, e6e5
+Depth 6 complete with 0 researches.
+Best move found is c4e6, nodes taken: 45913, score: 340
+
+0.36
+DEBUG
+	positions: 45913
+	time: 0.492242
+	positions per second: 93273.2
+	TT move orders: 926
+	TT hits: 702
+	TT length: 2009
+	KT move orders: 4966
+	KT move stores: 2909
+	avg beta cutoff move num: 7.13275
+
+[Python]
+Return code: 0
+Time: 1.8132s
+STDOUT:
+Current Evaluation: 31.0
+PV line: c1e3
+Depth 1 complete, best move found is c1e3, nodes taken: 98
+PV line: c4e6 f7e6
+Depth 2 complete, best move found is c4e6, nodes taken: 758
+PV line: c4e6 f7e6 c1e3
+Depth 3 complete, best move found is c4e6, nodes taken: 2465
+PV line: c4e6 f7e6 d3d4 f8e8
+Depth 4 complete, best move found is c4e6, nodes taken: 6317
+PV line: c4e6 f7e6 d3d4 c6d4 f3d4
+Depth 5 complete, best move found is c4e6, nodes taken: 19299
+PV line: c4e6 f7e6 d3d4 e5d4 f3d4 e6e5
+Depth 6 complete, best move found is c4e6, nodes taken: 45623
+v0.36 DEBUG: {'positions': 45623, 'tt move orders': 926, 'tt hits': 702, 'killer move orders': 4384, 'killer move stores': 2904, 'beta cutoff move num': 7.139262580966617, 'time': 1.71, 'positions per second': 26680.12, 'tt length': 2007}
+v0.36 Average Time: 1.71, Total Time: 1.71
+
+================================================================================
+
+Position 9
+FEN: 2r2rk1/pp1nqppp/2pbpn2/3p4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 2.3099s
+STDOUT:
+Current Evaluation: -75
+PV: e3e4
+Depth 1 complete with 0 researches.
+Best move found is e3e4, nodes taken: 95, score: -55
+
+PV: e3e4, e6e5
+Depth 2 complete with 0 researches.
+Best move found is e3e4, nodes taken: 2343, score: -75
+
+PV: c2a4, c8a8, e3e4
+Depth 3 complete with 0 researches.
+Best move found is c2a4, nodes taken: 8085, score: -60
+
+PV: c2b3, c8b8, e3e4, f8d8
+Depth 4 complete with 0 researches.
+Best move found is c2b3, nodes taken: 23011, score: -60
+
+PV: c2a4, c8a8, a4b3, d6b4, f3e5
+Depth 5 complete with 0 researches.
+Best move found is c2a4, nodes taken: 135244, score: -70
+
+PV: c2a4, c8a8, a4b3, d7b6, e3e4, c6c5
+Depth 6 complete with 0 researches.
+Best move found is c2a4, nodes taken: 284096, score: -60
+
+0.36
+DEBUG
+	positions: 284096
+	time: 2.29401
+	positions per second: 123843
+	TT move orders: 1522
+	TT hits: 1329
+	TT length: 9696
+	KT move orders: 17734
+	KT move stores: 11012
+	avg beta cutoff move num: 6.91912
+
+[Python]
+Return code: 0
+Time: 4.7266s
+STDOUT:
+Current Evaluation: -7.5
+PV line: e3e4
+Depth 1 complete, best move found is e3e4, nodes taken: 95
+PV line: e3e4 e6e5
+Depth 2 complete, best move found is e3e4, nodes taken: 1985
+PV line: c2a4 c8a8 e3e4
+Depth 3 complete, best move found is c2a4, nodes taken: 8399
+PV line: c2b3 c8b8 e3e4 f8e8
+Depth 4 complete, best move found is c2b3, nodes taken: 23479
+PV line: c2a4 c8a8 a4b3 d6b4 f3e5
+Depth 5 complete, best move found is c2a4, nodes taken: 127816
+PV line: c2a4 c8a8 a4b3 d7b6 e3e4 c6c5
+Depth 6 complete, best move found is c2a4, nodes taken: 249392
+v0.36 DEBUG: {'positions': 249392, 'tt move orders': 1517, 'tt hits': 1343, 'killer move orders': 16637, 'killer move stores': 10647, 'beta cutoff move num': 6.985853622217259, 'time': 4.62, 'positions per second': 53980.95, 'tt length': 9338}
+v0.36 Average Time: 4.62, Total Time: 4.62
+
+================================================================================
+
+Position 10
+FEN: r1bq1rk1/pp3ppp/2n1pn2/2bp4/2P5/2NP1NP1/PPQ1PPBP/R1B2RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 2.3193s
+STDOUT:
+Current Evaluation: 85
+PV: e2e4
+Depth 1 complete with 0 researches.
+Best move found is e2e4, nodes taken: 77, score: 125
+
+PV: e2e4, d8d6
+Depth 2 complete with 0 researches.
+Best move found is e2e4, nodes taken: 894, score: 115
+
+PV: e2e4, d5d4, c3b5
+Depth 3 complete with 0 researches.
+Best move found is e2e4, nodes taken: 4601, score: 115
+
+PV: e2e3, c6b4, c2b3, d8d6
+Depth 4 complete with 0 researches.
+Best move found is e2e3, nodes taken: 17005, score: 100
+
+PV: c4d5, c6b4, c2b3, f6d5, d3d4
+Depth 5 complete with 0 researches.
+Best move found is c4d5, nodes taken: 70756, score: 120
+
+PV: c4d5, c6b4, c2b3, e6d5, e2e4, c8e6
+Depth 6 complete with 0 researches.
+Best move found is c4d5, nodes taken: 192362, score: 110
+
+0.36
+DEBUG
+	positions: 192362
+	time: 2.30278
+	positions per second: 83534.7
+	TT move orders: 2368
+	TT hits: 2645
+	TT length: 14026
+	KT move orders: 25591
+	KT move stores: 16276
+	avg beta cutoff move num: 4.74375
+
+[Python]
+Return code: 0
+Time: 4.6022s
+STDOUT:
+Current Evaluation: 8.5
+PV line: e2e4
+Depth 1 complete, best move found is e2e4, nodes taken: 75
+PV line: e2e4 d8d6
+Depth 2 complete, best move found is e2e4, nodes taken: 866
+PV line: e2e4 d5d4 c3b5
+Depth 3 complete, best move found is e2e4, nodes taken: 4806
+PV line: c1f4 c6b4 c2b3 c8d7
+Depth 4 complete, best move found is c1f4, nodes taken: 18163
+PV line: c4d5 c6b4 c2b3 f6d5 d3d4
+Depth 5 complete, best move found is c4d5, nodes taken: 80246
+PV line: c4d5 c6b4 c2b3 e6d5 e2e4 c8e6
+Depth 6 complete, best move found is c4d5, nodes taken: 210812
+v0.36 DEBUG: {'positions': 210812, 'tt move orders': 2460, 'tt hits': 2577, 'killer move orders': 27274, 'killer move stores': 16621, 'beta cutoff move num': 4.765193508114857, 'time': 4.5, 'positions per second': 46847.11, 'tt length': 14319}
+v0.36 Average Time: 4.5, Total Time: 4.5
+
+================================================================================
+
+Position 11
+FEN: 8/8/8/3k4/8/4K3/8/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0143s
+STDOUT:
+Current Evaluation: 20
+PV: 
+Depth 1 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 2 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 3 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 4 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 5 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 6 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+0.36
+DEBUG
+	positions: 0
+	time: 2.9371e-05
+	positions per second: 0
+	TT move orders: 0
+	TT hits: 0
+	TT length: 0
+	KT move orders: 0
+	KT move stores: 0
+	avg beta cutoff move num: inf
+
+[Python]
+Return code: 0
+Time: 0.1096s
+STDOUT:
+Current Evaluation: 2.0
+PV line: e3f2
+Depth 1 complete, best move found is e3f2, nodes taken: 6
+PV line: e3f2
+Depth 2 complete, best move found is e3f2, nodes taken: 12
+PV line: e3f2
+Depth 3 complete, best move found is e3f2, nodes taken: 18
+PV line: e3f2
+Depth 4 complete, best move found is e3f2, nodes taken: 24
+PV line: e3f2
+Depth 5 complete, best move found is e3f2, nodes taken: 30
+PV line: e3f2
+Depth 6 complete, best move found is e3f2, nodes taken: 36
+v0.36 DEBUG: {'positions': 36, 'tt move orders': 5, 'tt hits': 0, 'killer move orders': 0, 'killer move stores': 0, 'beta cutoff move num': 6.0, 'time': 0.01, 'positions per second': 3600.0, 'tt length': 1}
+v0.36 Average Time: 0.01, Total Time: 0.01
+
+================================================================================
+
+Position 12
+FEN: 8/8/8/3k4/8/4K3/6P1/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0223s
+STDOUT:
+Current Evaluation: 130
+PV: e3d2
+Depth 1 complete with 0 researches.
+Best move found is e3d2, nodes taken: 8, score: 150
+
+PV: e3d2, d5c6
+Depth 2 complete with 0 researches.
+Best move found is e3d2, nodes taken: 31, score: 130
+
+PV: e3f2, d5c6, f2g1
+Depth 3 complete with 1 researches.
+Best move found is e3f2, nodes taken: 170, score: 160
+
+PV: e3f2, d5c6, f2g1, c6b7
+Depth 4 complete with 1 researches.
+Best move found is e3f2, nodes taken: 396, score: 120
+
+PV: e3f2, d5c6, f2f1, c6b7, f1g1
+Depth 5 complete with 0 researches.
+Best move found is e3f2, nodes taken: 925, score: 120
+
+PV: e3f2, d5c6, f2f1, c6b7, f1g1, b7b8
+Depth 6 complete with 0 researches.
+Best move found is e3f2, nodes taken: 1406, score: 110
+
+0.36
+DEBUG
+	positions: 1406
+	time: 0.00733008
+	positions per second: 191812
+	TT move orders: 144
+	TT hits: 164
+	TT length: 150
+	KT move orders: 282
+	KT move stores: 258
+	avg beta cutoff move num: 2.92602
+
+[Python]
+Return code: 0
+Time: 0.6175s
+STDOUT:
+Current Evaluation: 13.0
+PV line: e3f2
+Depth 1 complete, best move found is e3f2, nodes taken: 8
+PV line: e3f2 d5e6
+Depth 2 complete, best move found is e3f2, nodes taken: 31
+PV line: e3f2 d5e6 f2g1
+Depth 3 complete, best move found is e3f2, nodes taken: 48
+PV line: e3f2 d5c6 f2g1 c6b7
+Depth 4 complete, best move found is e3f2, nodes taken: 236
+PV line: e3f2 d5c6 f2f1 c6b7 f1g1
+Depth 5 complete, best move found is e3f2, nodes taken: 1490
+PV line: e3f2 d5c6 f2f1 c6b7 f1g1 b7b8
+Depth 6 complete, best move found is e3f2, nodes taken: 1974
+v0.36 DEBUG: {'positions': 1974, 'tt move orders': 137, 'tt hits': 168, 'killer move orders': 385, 'killer move stores': 332, 'beta cutoff move num': 3.1516314779270633, 'time': 0.51, 'positions per second': 3870.59, 'tt length': 244}
+v0.36 Average Time: 0.51, Total Time: 0.51
+
+================================================================================
+
+Position 13
+FEN: 8/8/8/2k5/8/2K5/5P2/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0359s
+STDOUT:
+Current Evaluation: 120
+PV: c3b2
+Depth 1 complete with 0 researches.
+Best move found is c3b2, nodes taken: 7, score: 160
+
+PV: c3b2, c5b6
+Depth 2 complete with 0 researches.
+Best move found is c3b2, nodes taken: 28, score: 150
+
+PV: c3b2, c5b6, b2b1
+Depth 3 complete with 0 researches.
+Best move found is c3b2, nodes taken: 124, score: 160
+
+PV: c3b2, c5b6, b2b1, b6a7
+Depth 4 complete with 1 researches.
+Best move found is c3b2, nodes taken: 322, score: 120
+
+PV: c3b2, c5b6, b2a1, b6a7, a1b1
+Depth 5 complete with 1 researches.
+Best move found is c3b2, nodes taken: 826, score: 120
+
+PV: c3b2, c5b6, b2a1, b6a7, a1b1, a7b8
+Depth 6 complete with 0 researches.
+Best move found is c3b2, nodes taken: 1284, score: 110
+
+0.36
+DEBUG
+	positions: 1284
+	time: 0.0112288
+	positions per second: 114348
+	TT move orders: 119
+	TT hits: 144
+	TT length: 128
+	KT move orders: 228
+	KT move stores: 219
+	avg beta cutoff move num: 3.07514
+
+[Python]
+Return code: 0
+Time: 0.6582s
+STDOUT:
+Current Evaluation: 12.0
+PV line: c3b2
+Depth 1 complete, best move found is c3b2, nodes taken: 7
+PV line: c3b2 c5d6
+Depth 2 complete, best move found is c3b2, nodes taken: 28
+PV line: c3b2 c5d6 b2b1
+Depth 3 complete, best move found is c3b2, nodes taken: 124
+PV line: c3b2 c5c6 b2b1 c6b7
+Depth 4 complete, best move found is c3b2, nodes taken: 233
+PV line: c3b2 c5c6 b2a2 c6b7 a2b1
+Depth 5 complete, best move found is c3b2, nodes taken: 1220
+PV line: c3b2 c5c6 b2a2 c6b7 a2b1 b7b8
+Depth 6 complete, best move found is c3b2, nodes taken: 1698
+v0.36 DEBUG: {'positions': 1698, 'tt move orders': 117, 'tt hits': 134, 'killer move orders': 311, 'killer move stores': 285, 'beta cutoff move num': 3.161073825503356, 'time': 0.49, 'positions per second': 3465.31, 'tt length': 208}
+v0.36 Average Time: 0.49, Total Time: 0.49
+
+================================================================================
+
+Position 14
+FEN: 8/8/3k4/8/3K4/8/8/8 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0254s
+STDOUT:
+Current Evaluation: -20
+PV: 
+Depth 1 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 2 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 3 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 4 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 5 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+PV: 
+Depth 6 complete with 0 researches.
+Best move found is b1b1, nodes taken: 0, score: 0
+
+0.36
+DEBUG
+	positions: 0
+	time: 5.0375e-05
+	positions per second: 0
+	TT move orders: 0
+	TT hits: 0
+	TT length: 0
+	KT move orders: 0
+	KT move stores: 0
+	avg beta cutoff move num: inf
+
+[Python]
+Return code: 0
+Time: 0.1954s
+STDOUT:
+Current Evaluation: -2.0
+PV line: d4e3
+Depth 1 complete, best move found is d4e3, nodes taken: 5
+PV line: d4e3
+Depth 2 complete, best move found is d4e3, nodes taken: 10
+PV line: d4e3
+Depth 3 complete, best move found is d4e3, nodes taken: 15
+PV line: d4e3
+Depth 4 complete, best move found is d4e3, nodes taken: 20
+PV line: d4e3
+Depth 5 complete, best move found is d4e3, nodes taken: 25
+PV line: d4e3
+Depth 6 complete, best move found is d4e3, nodes taken: 30
+v0.36 DEBUG: {'positions': 30, 'tt move orders': 5, 'tt hits': 0, 'killer move orders': 0, 'killer move stores': 0, 'beta cutoff move num': 5.0, 'time': 0.02, 'positions per second': 1500.0, 'tt length': 1}
+v0.36 Average Time: 0.02, Total Time: 0.02
+
+================================================================================
+
+Position 15
+FEN: 6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0358s
+STDOUT:
+Current Evaluation: 0
+PV: h2h3
+Depth 1 complete with 0 researches.
+Best move found is h2h3, nodes taken: 8, score: 0
+
+PV: h2h3, h7h6
+Depth 2 complete with 0 researches.
+Best move found is h2h3, nodes taken: 31, score: 0
+
+PV: g1h1, h7h6, h1g1
+Depth 3 complete with 0 researches.
+Best move found is g1h1, nodes taken: 149, score: 0
+
+PV: g1h1, h7h5, h1g1, h5h4
+Depth 4 complete with 0 researches.
+Best move found is g1h1, nodes taken: 264, score: 0
+
+PV: g1h1, g8h8, h1g1, h8g8, g1h1, g8h8
+Depth 5 complete with 0 researches.
+Best move found is g1h1, nodes taken: 561, score: 0
+
+PV: g1h1, g8h8, h1g1, h8g8, g1h1, g8h8, h1g1
+Depth 6 complete with 0 researches.
+Best move found is g1h1, nodes taken: 1092, score: 0
+
+0.36
+DEBUG
+	positions: 1092
+	time: 0.0102571
+	positions per second: 106462
+	TT move orders: 74
+	TT hits: 35
+	TT length: 130
+	KT move orders: 278
+	KT move stores: 171
+	avg beta cutoff move num: 3.16609
+
+[Python]
+Return code: 0
+Time: 0.6340s
+STDOUT:
+Current Evaluation: 0.0
+PV line: h2h3
+Depth 1 complete, best move found is h2h3, nodes taken: 8
+PV line: h2h3 h7h6
+Depth 2 complete, best move found is h2h3, nodes taken: 31
+PV line: g1h1 h7h6 h1g1
+Depth 3 complete, best move found is g1h1, nodes taken: 149
+PV line: g1h1 h7h5 h1g1 h5h4
+Depth 4 complete, best move found is g1h1, nodes taken: 264
+PV line: g1h1 g8h8 h1g1 h8g8 g1h1 g8h8
+Depth 5 complete, best move found is g1h1, nodes taken: 561
+PV line: g1h1 g8h8 h1g1 h8g8 g1h1 g8h8 h1g1
+Depth 6 complete, best move found is g1h1, nodes taken: 1106
+v0.36 DEBUG: {'positions': 1106, 'tt move orders': 74, 'tt hits': 35, 'killer move orders': 274, 'killer move stores': 169, 'beta cutoff move num': 3.2214532871972317, 'time': 0.46, 'positions per second': 2404.35, 'tt length': 130}
+v0.36 Average Time: 0.46, Total Time: 0.46
+
+================================================================================
+
+Position 16
+FEN: 8/2p5/3p4/3P4/2P5/8/8/4K2k w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0276s
+STDOUT:
+Current Evaluation: 45
+PV: e1f1
+Depth 1 complete with 0 researches.
+Best move found is e1f1, nodes taken: 6, score: 55
+
+PV: e1f1, h1h2
+Depth 2 complete with 0 researches.
+Best move found is e1f1, nodes taken: 20, score: 55
+
+PV: e1d1, h1h2, d1c1
+Depth 3 complete with 0 researches.
+Best move found is e1d1, nodes taken: 85, score: 55
+
+PV: e1d1, h1h2, d1c1, h2h1
+Depth 4 complete with 0 researches.
+Best move found is e1d1, nodes taken: 145, score: 55
+
+PV: e1d1, h1h2, d1c1, h2h1, c1b1
+Depth 5 complete with 0 researches.
+Best move found is e1d1, nodes taken: 298, score: 75
+
+PV: e1d1, h1h2, d1c1, h2h1, c1b1, h1h2
+Depth 6 complete with 0 researches.
+Best move found is e1d1, nodes taken: 581, score: 75
+
+0.36
+DEBUG
+	positions: 581
+	time: 0.00392125
+	positions per second: 148167
+	TT move orders: 56
+	TT hits: 51
+	TT length: 64
+	KT move orders: 102
+	KT move stores: 97
+	avg beta cutoff move num: 2.82249
+
+[Python]
+Return code: 0
+Time: 0.3760s
+STDOUT:
+Current Evaluation: 4.5
+PV line: e1f1
+Depth 1 complete, best move found is e1f1, nodes taken: 6
+PV line: e1f1 h1h2
+Depth 2 complete, best move found is e1f1, nodes taken: 20
+PV line: e1f2 h1h2 f2f1
+Depth 3 complete, best move found is e1f2, nodes taken: 81
+PV line: e1f2 h1h2 f2f1 h2h3
+Depth 4 complete, best move found is e1f2, nodes taken: 114
+PV line: e1f2 h1h2 f2e2 h2h3 e2f1
+Depth 5 complete, best move found is e1f2, nodes taken: 285
+PV line: e1f2 h1h2 f2f1 h2h1 f1f2 h1h2 f2f1
+Depth 6 complete, best move found is e1f2, nodes taken: 486
+v0.36 DEBUG: {'positions': 486, 'tt move orders': 46, 'tt hits': 23, 'killer move orders': 71, 'killer move stores': 86, 'beta cutoff move num': 2.5460526315789473, 'time': 0.21, 'positions per second': 2314.29, 'tt length': 72}
+v0.36 Average Time: 0.21, Total Time: 0.21
+
+================================================================================
+
+Position 17
+FEN: r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0942s
+STDOUT:
+Current Evaluation: 0
+PV: h1h8, e8d7
+Depth 1 complete with 0 researches.
+Best move found is h1h8, nodes taken: 36, score: 1020
+
+PV: h1h8, e8d7
+Depth 2 complete with 0 researches.
+Best move found is h1h8, nodes taken: 149, score: 1020
+
+PV: h1h8, e8f7, h8a8
+Depth 3 complete with 0 researches.
+Best move found is h1h8, nodes taken: 507, score: 1020
+
+PV: h1h8, e8f7, h8a8, f7g7
+Depth 4 complete with 0 researches.
+Best move found is h1h8, nodes taken: 810, score: 1000
+
+PV: a1a8, e8f7, a8h8, f7g7, h1h7, g7f6
+Depth 5 complete with 1 researches.
+Best move found is a1a8, nodes taken: 2765, score: 1045
+
+PV: a1a8, e8f7, a8h8, f7g7, h1h7, g7f6
+Depth 6 complete with 1 researches.
+Best move found is a1a8, nodes taken: 5832, score: 1045
+
+0.36
+DEBUG
+	positions: 5832
+	time: 0.0696969
+	positions per second: 83676.6
+	TT move orders: 263
+	TT hits: 853
+	TT length: 779
+	KT move orders: 1238
+	KT move stores: 1000
+	avg beta cutoff move num: 2.99719
+
+[Python]
+Return code: 0
+Time: 1.5417s
+STDOUT:
+Current Evaluation: 0.0
+PV line: h1h8 e8f7
+Depth 1 complete, best move found is h1h8, nodes taken: 36
+PV line: h1h8 e8f7
+Depth 2 complete, best move found is h1h8, nodes taken: 147
+PV line: h1h8 e8f7 h8a8
+Depth 3 complete, best move found is h1h8, nodes taken: 445
+PV line: h1h8 e8f7 h8a8 f7g7
+Depth 4 complete, best move found is h1h8, nodes taken: 746
+PV line: h1h8 e8f7 h8a8 f7g7 a1a7
+Depth 5 complete, best move found is h1h8, nodes taken: 797
+PV line: h1h8 e8f7 h8a8 f7g7 a1a7 g7h6
+Depth 6 complete, best move found is h1h8, nodes taken: 3117
+v0.36 DEBUG: {'positions': 3117, 'tt move orders': 81, 'tt hits': 301, 'killer move orders': 847, 'killer move stores': 734, 'beta cutoff move num': 1.973026973026973, 'time': 1.37, 'positions per second': 2275.18, 'tt length': 671}
+v0.36 Average Time: 1.37, Total Time: 1.37
+
+================================================================================
+
+Position 18
+FEN: 4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0292s
+STDOUT:
+Current Evaluation: 5
+PV: e5d6
+Depth 1 complete with 0 researches.
+Best move found is e5d6, nodes taken: 7, score: 130
+
+PV: e5d6, e8f8
+Depth 2 complete with 0 researches.
+Best move found is e5d6, nodes taken: 24, score: 120
+
+PV: e1f1, e8f8, f1g1
+Depth 3 complete with 1 researches.
+Best move found is e1f1, nodes taken: 187, score: 25
+
+PV: e1f1, e8f8, f1g1, f8g8
+Depth 4 complete with 0 researches.
+Best move found is e1f1, nodes taken: 280, score: 5
+
+PV: e1f1, e8f8, f1g1, f8g8, e5e6
+Depth 5 complete with 0 researches.
+Best move found is e1f1, nodes taken: 556, score: 10
+
+PV: e5d6, e8d7, e1f1, d7d6
+Depth 6 complete with 0 researches.
+Best move found is e5d6, nodes taken: 1072, score: 0
+
+0.36
+DEBUG
+	positions: 1072
+	time: 0.00621242
+	positions per second: 172558
+	TT move orders: 99
+	TT hits: 67
+	TT length: 153
+	KT move orders: 239
+	KT move stores: 213
+	avg beta cutoff move num: 2.50296
+
+[Python]
+Return code: 0
+Time: 0.2069s
+STDOUT:
+Current Evaluation: 0.5
+PV line: e5d6
+Depth 1 complete, best move found is e5d6, nodes taken: 7
+PV line: e5d6 e8f8
+Depth 2 complete, best move found is e5d6, nodes taken: 24
+PV line: e5d6 e8d7
+Depth 3 complete, best move found is e5d6, nodes taken: 107
+PV line: e5d6 e8d7 e1f1 d7d6
+Depth 4 complete, best move found is e5d6, nodes taken: 150
+PV line: e5d6 e8d7 e1f1 d7d6
+Depth 5 complete, best move found is e5d6, nodes taken: 345
+PV line: e5d6 e8d7 e1f1 d7d6
+Depth 6 complete, best move found is e5d6, nodes taken: 485
+v0.36 DEBUG: {'positions': 485, 'tt move orders': 43, 'tt hits': 30, 'killer move orders': 82, 'killer move stores': 77, 'beta cutoff move num': 2.891304347826087, 'time': 0.1, 'positions per second': 4850.0, 'tt length': 55}
+v0.36 Average Time: 0.1, Total Time: 0.1
+
+================================================================================
+
+Position 19
+FEN: 8/8/8/1pP5/8/8/8/4K2k w - b6 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.0183s
+STDOUT:
+Current Evaluation: 40
+PV: c5b6
+Depth 1 complete with 0 researches.
+Best move found is c5b6, nodes taken: 7, score: 140
+
+PV: c5b6, h1h2
+Depth 2 complete with 0 researches.
+Best move found is c5b6, nodes taken: 23, score: 140
+
+PV: c5b6, h1h2, b6b7
+Depth 3 complete with 1 researches.
+Best move found is c5b6, nodes taken: 94, score: 180
+
+PV: c5b6, h1h2, b6b7, h2h1
+Depth 4 complete with 1 researches.
+Best move found is c5b6, nodes taken: 138, score: 180
+
+PV: c5b6, h1h2, b6b7, h2h1, b7b8q
+Depth 5 complete with 1 researches.
+Best move found is c5b6, nodes taken: 313, score: 900
+
+PV: c5b6, h1h2, b6b7, h2h3, b7b8q, h3h4
+Depth 6 complete with 1 researches.
+Best move found is c5b6, nodes taken: 526, score: 900
+
+0.36
+DEBUG
+	positions: 526
+	time: 0.00254133
+	positions per second: 206978
+	TT move orders: 61
+	TT hits: 90
+	TT length: 62
+	KT move orders: 96
+	KT move stores: 91
+	avg beta cutoff move num: 2.56213
+
+[Python]
+Return code: 0
+Time: 0.1629s
+STDOUT:
+Current Evaluation: 4.0
+PV line: c5b6
+Depth 1 complete, best move found is c5b6, nodes taken: 7
+PV line: c5b6 h1h2
+Depth 2 complete, best move found is c5b6, nodes taken: 23
+PV line: c5b6 h1h2 b6b7
+Depth 3 complete, best move found is c5b6, nodes taken: 30
+PV line: c5b6 h1h2 b6b7 h2h3
+Depth 4 complete, best move found is c5b6, nodes taken: 67
+PV line: c5b6 h1h2 b6b7 h2h3 b7b8q
+Depth 5 complete, best move found is c5b6, nodes taken: 105
+PV line: c5b6 h1h2 b6b7 h2h3 b7b8q h3h4
+Depth 6 complete, best move found is c5b6, nodes taken: 252
+v0.36 DEBUG: {'positions': 252, 'tt move orders': 28, 'tt hits': 41, 'killer move orders': 54, 'killer move stores': 61, 'beta cutoff move num': 1.9292929292929293, 'time': 0.06, 'positions per second': 4200.0, 'tt length': 49}
+v0.36 Average Time: 0.06, Total Time: 0.06
+
+================================================================================
+
+Position 20
+FEN: rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.3047s
+STDOUT:
+Current Evaluation: 50
+PV: e3e4
+Depth 1 complete with 0 researches.
+Best move found is e3e4, nodes taken: 68, score: 70
+
+PV: e3e4, b8c6
+Depth 2 complete with 1 researches.
+Best move found is e3e4, nodes taken: 748, score: 20
+
+PV: e3e4, b8c6, c1e3
+Depth 3 complete with 0 researches.
+Best move found is e3e4, nodes taken: 2514, score: 40
+
+PV: e3e4, d5e4, c3e4, b8c6
+Depth 4 complete with 0 researches.
+Best move found is e3e4, nodes taken: 22348, score: 30
+
+PV: e3e4, d5e4, c3e4, b8c6, c1g5
+Depth 5 complete with 0 researches.
+Best move found is e3e4, nodes taken: 65584, score: 45
+
+PV: d1e2, b8c6, e3e4, d5e4, c3e4, f6d5
+Depth 6 complete with 0 researches.
+Best move found is d1e2, nodes taken: 130937, score: 25
+
+0.36
+DEBUG
+	positions: 130937
+	time: 1.28873
+	positions per second: 101601
+	TT move orders: 1187
+	TT hits: 1279
+	TT length: 8377
+	KT move orders: 12295
+	KT move stores: 9447
+	avg beta cutoff move num: 5.24733
+
+[Python]
+Return code: 0
+Time: 3.6127s
+STDOUT:
+Current Evaluation: 5.0
+PV line: e3e4
+Depth 1 complete, best move found is e3e4, nodes taken: 68
+PV line: e3e4 b8c6
+Depth 2 complete, best move found is e3e4, nodes taken: 414
+PV line: e3e4 b8c6 c1e3
+Depth 3 complete, best move found is e3e4, nodes taken: 2435
+PV line: e3e4 d5e4 c3e4 b8c6
+Depth 4 complete, best move found is e3e4, nodes taken: 13452
+PV line: e3e4 d5e4 c3e4 b8c6 c1g5
+Depth 5 complete, best move found is e3e4, nodes taken: 48990
+PV line: f1e1 b8c6 e3e4 f6e4 c3e4 d5e4
+Depth 6 complete, best move found is f1e1, nodes taken: 112797
+v0.36 DEBUG: {'positions': 112797, 'tt move orders': 1151, 'tt hits': 1308, 'killer move orders': 11800, 'killer move stores': 9373, 'beta cutoff move num': 5.326415910073497, 'time': 3.51, 'positions per second': 32135.9, 'tt length': 8347}
+v0.36 Average Time: 3.51, Total Time: 3.51
+
+================================================================================
+
+Position 21
+FEN: r1bqk2r/pppp1ppp/2n5/2b1p3/2B1P1n1/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 2.0576s
+STDOUT:
+Current Evaluation: 55
+PV: d3d4
+Depth 1 complete with 0 researches.
+Best move found is d3d4, nodes taken: 236, score: 60
+
+PV: c1g5, g4f2
+Depth 2 complete with 0 researches.
+Best move found is c1g5, nodes taken: 1103, score: 55
+
+PV: c4f7, e8f7, f3g5, f7g8
+Depth 3 complete with 1 researches.
+Best move found is c4f7, nodes taken: 3896, score: 110
+
+PV: c4f7, e8f7, f3g5, f7g8
+Depth 4 complete with 0 researches.
+Best move found is c4f7, nodes taken: 9273, score: 110
+
+PV: c4f7, e8f7, f3g5, f7g8, d1g4
+Depth 5 complete with 0 researches.
+Best move found is c4f7, nodes taken: 36573, score: 110
+
+PV: f3g5, g4h6, g5f3, e8g8, c1g5, d8e8
+Depth 6 complete with 1 researches.
+Best move found is f3g5, nodes taken: 189220, score: 75
+
+0.36
+DEBUG
+	positions: 189220
+	time: 2.04175
+	positions per second: 92675.5
+	TT move orders: 5340
+	TT hits: 2326
+	TT length: 8274
+	KT move orders: 18120
+	KT move stores: 13521
+	avg beta cutoff move num: 4.58606
+
+[Python]
+Return code: 0
+Time: 3.7861s
+STDOUT:
+Current Evaluation: 5.5
+PV line: d3d4
+Depth 1 complete, best move found is d3d4, nodes taken: 244
+PV line: c1g5 g4f2
+Depth 2 complete, best move found is c1g5, nodes taken: 1138
+PV line: c4f7 e8f7 f3g5
+Depth 3 complete, best move found is c4f7, nodes taken: 2139
+PV line: c4f7 e8f7 f3g5 f7g8
+Depth 4 complete, best move found is c4f7, nodes taken: 8139
+PV line: c4f7 e8f7 f3g5 f7g8 d1g4
+Depth 5 complete, best move found is c4f7, nodes taken: 33504
+PV line: c4f7 e8f7 f3g5 f7g8 d1g4 d7d5
+Depth 6 complete, best move found is c4f7, nodes taken: 77963
+v0.36 DEBUG: {'positions': 77963, 'tt move orders': 777, 'tt hits': 1066, 'killer move orders': 7624, 'killer move stores': 6274, 'beta cutoff move num': 3.1827188362177075, 'time': 3.68, 'positions per second': 21185.6, 'tt length': 5551}
+v0.36 Average Time: 3.68, Total Time: 3.68
+
+================================================================================
+
+Position 22
+FEN: 2rq1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.0674s
+STDOUT:
+Current Evaluation: 85
+PV: e2e4
+Depth 1 complete with 0 researches.
+Best move found is e2e4, nodes taken: 42, score: 125
+
+PV: e2e4, c6e5
+Depth 2 complete with 0 researches.
+Best move found is e2e4, nodes taken: 1319, score: 115
+
+PV: e2e4, d8b6, d1c2
+Depth 3 complete with 0 researches.
+Best move found is e2e4, nodes taken: 4001, score: 130
+
+PV: e2e4, c6e5, c1e3, d8d7
+Depth 4 complete with 0 researches.
+Best move found is e2e4, nodes taken: 7872, score: 130
+
+PV: e2e4, c6e5, c1e3, d8b6, a1b1
+Depth 5 complete with 0 researches.
+Best move found is e2e4, nodes taken: 37384, score: 130
+
+PV: e2e4, c6d4, c1e3, d8b6, a1b1, c8d8
+Depth 6 complete with 0 researches.
+Best move found is e2e4, nodes taken: 116150, score: 125
+
+0.36
+DEBUG
+	positions: 116150
+	time: 1.04902
+	positions per second: 110723
+	TT move orders: 922
+	TT hits: 719
+	TT length: 3852
+	KT move orders: 8102
+	KT move stores: 4702
+	avg beta cutoff move num: 8.25456
+
+[Python]
+Return code: 0
+Time: 2.5434s
+STDOUT:
+Current Evaluation: 8.5
+PV line: e2e4
+Depth 1 complete, best move found is e2e4, nodes taken: 42
+PV line: e2e4 c6e5
+Depth 2 complete, best move found is e2e4, nodes taken: 733
+PV line: e2e4 d8b6 c3d5
+Depth 3 complete, best move found is e2e4, nodes taken: 2841
+PV line: e2e4 d8d7 c1f4 c6d4
+Depth 4 complete, best move found is e2e4, nodes taken: 6232
+PV line: e2e4 c6e5 c1f4 d8b6 f3e5
+Depth 5 complete, best move found is e2e4, nodes taken: 37974
+PV line: e2e4 c6d4 c1f4 d8b6 a1b1 f8e8
+Depth 6 complete, best move found is e2e4, nodes taken: 101576
+v0.36 DEBUG: {'positions': 101576, 'tt move orders': 934, 'tt hits': 727, 'killer move orders': 7422, 'killer move stores': 4307, 'beta cutoff move num': 8.436184891341842, 'time': 2.44, 'positions per second': 41629.51, 'tt length': 3459}
+v0.36 Average Time: 2.44, Total Time: 2.44
+
+================================================================================
+
+Position 23
+FEN: r4rk1/pp1n1ppp/2pbpn2/q7/3P4/1PN1PN2/PBQ2PPP/2RR2K1 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 1.3246s
+STDOUT:
+Current Evaluation: 25
+PV: e3e4
+Depth 1 complete with 0 researches.
+Best move found is e3e4, nodes taken: 59, score: 45
+
+PV: e3e4, e6e5
+Depth 2 complete with 0 researches.
+Best move found is e3e4, nodes taken: 1672, score: 30
+
+PV: e3e4, e6e5, d4e5
+Depth 3 complete with 0 researches.
+Best move found is e3e4, nodes taken: 5746, score: 30
+
+PV: e3e4, e6e5, d4e5, d6e5
+Depth 4 complete with 0 researches.
+Best move found is e3e4, nodes taken: 13108, score: 30
+
+PV: e3e4, e6e5, d4e5, d6e5, f3d4
+Depth 5 complete with 0 researches.
+Best move found is e3e4, nodes taken: 52357, score: 35
+
+PV: e3e4, e6e5, d4e5, d6e5, f3e5, d7e5
+Depth 6 complete with 0 researches.
+Best move found is e3e4, nodes taken: 140234, score: 30
+
+0.36
+DEBUG
+	positions: 140234
+	time: 1.30587
+	positions per second: 107388
+	TT move orders: 1032
+	TT hits: 694
+	TT length: 6155
+	KT move orders: 8785
+	KT move stores: 7135
+	avg beta cutoff move num: 7.79007
+
+[Python]
+Return code: 0
+Time: 3.0943s
+STDOUT:
+Current Evaluation: 2.5
+PV line: e3e4
+Depth 1 complete, best move found is e3e4, nodes taken: 59
+PV line: e3e4 e6e5
+Depth 2 complete, best move found is e3e4, nodes taken: 1667
+PV line: e3e4 e6e5 d4e5
+Depth 3 complete, best move found is e3e4, nodes taken: 5671
+PV line: e3e4 e6e5 d4e5 d6e5
+Depth 4 complete, best move found is e3e4, nodes taken: 13258
+PV line: e3e4 e6e5 d4e5 d6e5 f3d4
+Depth 5 complete, best move found is e3e4, nodes taken: 53667
+PV line: e3e4 e6e5 d4e5 d6e5 f3e5 d7e5
+Depth 6 complete, best move found is e3e4, nodes taken: 134754
+v0.36 DEBUG: {'positions': 134754, 'tt move orders': 1070, 'tt hits': 709, 'killer move orders': 8248, 'killer move stores': 7179, 'beta cutoff move num': 7.689525649280961, 'time': 2.99, 'positions per second': 45068.23, 'tt length': 6178}
+v0.36 Average Time: 2.99, Total Time: 2.99
+
+================================================================================
+
+Position 24
+FEN: 3r2k1/5pp1/p2p1n1p/1p1P4/1P3P2/P1N3P1/5K1P/3R4 w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.1312s
+STDOUT:
+Current Evaluation: -30
+PV: f2g1
+Depth 1 complete with 0 researches.
+Best move found is f2g1, nodes taken: 32, score: 0
+
+PV: f2g1, d8e8
+Depth 2 complete with 0 researches.
+Best move found is f2g1, nodes taken: 235, score: 0
+
+PV: f2g1, d8c8, c3e2
+Depth 3 complete with 0 researches.
+Best move found is f2g1, nodes taken: 1228, score: 0
+
+PV: f2g1, d8c8, d1d3, c8d8
+Depth 4 complete with 0 researches.
+Best move found is f2g1, nodes taken: 2040, score: -5
+
+PV: f2g1, d8e8, d1f1, e8e3, f1c1
+Depth 5 complete with 0 researches.
+Best move found is f2g1, nodes taken: 6795, score: 0
+
+PV: f2g1, d8e8, d1f1, e8e3, f1c1, e3e8
+Depth 6 complete with 0 researches.
+Best move found is f2g1, nodes taken: 13685, score: -5
+
+0.36
+DEBUG
+	positions: 13685
+	time: 0.115614
+	positions per second: 118368
+	TT move orders: 264
+	TT hits: 254
+	TT length: 1224
+	KT move orders: 2318
+	KT move stores: 1447
+	avg beta cutoff move num: 4.85618
+
+[Python]
+Return code: 0
+Time: 1.1354s
+STDOUT:
+Current Evaluation: -3.0
+PV line: f2g1
+Depth 1 complete, best move found is f2g1, nodes taken: 32
+PV line: f2g1 d8e8
+Depth 2 complete, best move found is f2g1, nodes taken: 234
+PV line: f2g1 d8c8 c3e2
+Depth 3 complete, best move found is f2g1, nodes taken: 1206
+PV line: f2g1 d8c8 d1d3 c8e8
+Depth 4 complete, best move found is f2g1, nodes taken: 2066
+PV line: f2g1 d8e8 d1f1 e8e3 f1c1
+Depth 5 complete, best move found is f2g1, nodes taken: 6750
+PV line: f2g1 d8e8 d1f1 e8e3 f1c1 e3e8
+Depth 6 complete, best move found is f2g1, nodes taken: 13897
+v0.36 DEBUG: {'positions': 13897, 'tt move orders': 295, 'tt hits': 263, 'killer move orders': 2059, 'killer move stores': 1505, 'beta cutoff move num': 4.711480362537764, 'time': 1.03, 'positions per second': 13492.23, 'tt length': 1255}
+v0.36 Average Time: 1.03, Total Time: 1.03
+
+================================================================================
+
+Position 25
+FEN: 8/8/2k5/8/8/2K5/2Q5/7q w - - 0 1
+--------------------------------------------------------------------------------
+[C++]
+Return code: 0
+Time: 0.1061s
+STDOUT:
+Current Evaluation: 25
+PV: c3b2, c6b7
+Depth 1 complete with 0 researches.
+Best move found is c3b2, nodes taken: 39, score: 25
+
+PV: c3b2, c6b7
+Depth 2 complete with 0 researches.
+Best move found is c3b2, nodes taken: 85, score: 25
+
+PV: c3b2, c6b7, b2a2
+Depth 3 complete with 0 researches.
+Best move found is c3b2, nodes taken: 777, score: 25
+
+PV: c3b2, c6b7, c2b3, b7a7
+Depth 4 complete with 0 researches.
+Best move found is c3b2, nodes taken: 1704, score: 25
+
+PV: c3b2, c6b7, c2b3, b7a7, b3d3
+Depth 5 complete with 0 researches.
+Best move found is c3b2, nodes taken: 6945, score: 25
+
+PV: c3b2, c6b7, c2b3, b7a8, b3a4, a8b8, a4f4
+Depth 6 complete with 0 researches.
+Best move found is c3b2, nodes taken: 11451, score: 10
+
+0.36
+DEBUG
+	positions: 11451
+	time: 0.0856872
+	positions per second: 133637
+	TT move orders: 593
+	TT hits: 1242
+	TT length: 1532
+	KT move orders: 2310
+	KT move stores: 2094
+	avg beta cutoff move num: 3.14207
+
+[Python]
+Return code: 0
+Time: 1.1968s
+STDOUT:
+Current Evaluation: 2.5
+PV line: c3b2 c6b7
+Depth 1 complete, best move found is c3b2, nodes taken: 39
+PV line: c3b2 c6b7
+Depth 2 complete, best move found is c3b2, nodes taken: 83
+PV line: c3b2 c6b7 c2f5
+Depth 3 complete, best move found is c3b2, nodes taken: 766
+PV line: c3b2 c6b7 c2b3 b7a8
+Depth 4 complete, best move found is c3b2, nodes taken: 1629
+PV line: c3b2 c6b7 c2b3 b7a8 b2a2
+Depth 5 complete, best move found is c3b2, nodes taken: 6735
+PV line: c3b2 c6b7 c2b3 b7a8 b3a4 a8b8
+Depth 6 complete, best move found is c3b2, nodes taken: 11611
+v0.36 DEBUG: {'positions': 11611, 'tt move orders': 610, 'tt hits': 1242, 'killer move orders': 2441, 'killer move stores': 2198, 'beta cutoff move num': 3.059353117705902, 'time': 1.1, 'positions per second': 10555.45, 'tt length': 1616}
+v0.36 Average Time: 1.1, Total Time: 1.1
+
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Pos 01: C++ rc=0 0.2792s | Python rc=0 1.1015s | FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Pos 02: C++ rc=0 2.2510s | Python rc=0 6.9073s | FEN=r3kb1r/pppb1ppp/2n1p3/qB6/3P4/1QP1PN2/P4PPP/R1B1K2R w KQkq - 0 1
+Pos 03: C++ rc=0 1.0936s | Python rc=0 5.1836s | FEN=r1bq1rk1/pppn1ppp/3bpn2/3p4/3P4/2NBPN2/PPQ2PPP/R1B2RK1 w - - 0 1
+Pos 04: C++ rc=0 4.7992s | Python rc=0 9.0876s | FEN=2r2rk1/1bqnbppp/p3pn2/1p6/3P4/1BN1PN2/PPQ2PPP/2RR2K1 w - - 0 1
+Pos 05: C++ rc=0 1.0579s | Python rc=0 2.6850s | FEN=r2q1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+Pos 06: C++ rc=0 0.4962s | Python rc=0 2.3617s | FEN=4rrk1/1pp1qppp/p1np1n2/8/2P5/1PN1PN2/PB1Q1PPP/2RR2K1 w - - 0 1
+Pos 07: C++ rc=0 3.1569s | Python rc=0 8.7084s | FEN=r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+Pos 08: C++ rc=0 0.5076s | Python rc=0 1.8132s | FEN=r2q1rk1/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1
+Pos 09: C++ rc=0 2.3099s | Python rc=0 4.7266s | FEN=2r2rk1/pp1nqppp/2pbpn2/3p4/3P4/2NBPN2/PPQ2PPP/2RR2K1 w - - 0 1
+Pos 10: C++ rc=0 2.3193s | Python rc=0 4.6022s | FEN=r1bq1rk1/pp3ppp/2n1pn2/2bp4/2P5/2NP1NP1/PPQ1PPBP/R1B2RK1 w - - 0 1
+Pos 11: C++ rc=0 0.0143s | Python rc=0 0.1096s | FEN=8/8/8/3k4/8/4K3/8/8 w - - 0 1
+Pos 12: C++ rc=0 0.0223s | Python rc=0 0.6175s | FEN=8/8/8/3k4/8/4K3/6P1/8 w - - 0 1
+Pos 13: C++ rc=0 0.0359s | Python rc=0 0.6582s | FEN=8/8/8/2k5/8/2K5/5P2/8 w - - 0 1
+Pos 14: C++ rc=0 0.0254s | Python rc=0 0.1954s | FEN=8/8/3k4/8/3K4/8/8/8 w - - 0 1
+Pos 15: C++ rc=0 0.0358s | Python rc=0 0.6340s | FEN=6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1
+Pos 16: C++ rc=0 0.0276s | Python rc=0 0.3760s | FEN=8/2p5/3p4/3P4/2P5/8/8/4K2k w - - 0 1
+Pos 17: C++ rc=0 0.0942s | Python rc=0 1.5417s | FEN=r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1
+Pos 18: C++ rc=0 0.0292s | Python rc=0 0.2069s | FEN=4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1
+Pos 19: C++ rc=0 0.0183s | Python rc=0 0.1629s | FEN=8/8/8/1pP5/8/8/8/4K2k w - b6 0 1
+Pos 20: C++ rc=0 1.3047s | Python rc=0 3.6127s | FEN=rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/2NBPN2/PPP2PPP/R1BQ1RK1 w - - 0 1
+Pos 21: C++ rc=0 2.0576s | Python rc=0 3.7861s | FEN=r1bqk2r/pppp1ppp/2n5/2b1p3/2B1P1n1/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 0 1
+Pos 22: C++ rc=0 1.0674s | Python rc=0 2.5434s | FEN=2rq1rk1/pp2bppp/2npbn2/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 w - - 0 1
+Pos 23: C++ rc=0 1.3246s | Python rc=0 3.0943s | FEN=r4rk1/pp1n1ppp/2pbpn2/q7/3P4/1PN1PN2/PBQ2PPP/2RR2K1 w - - 0 1
+Pos 24: C++ rc=0 0.1312s | Python rc=0 1.1354s | FEN=3r2k1/5pp1/p2p1n1p/1p1P4/1P3P2/P1N3P1/5K1P/3R4 w - - 0 1
+Pos 25: C++ rc=0 0.1061s | Python rc=0 1.1968s | FEN=8/8/2k5/8/8/2K5/2Q5/7q w - - 0 1
+
+Total C++ time: 24.5652s
+Total Python time: 67.0479s

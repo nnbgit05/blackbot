@@ -1,0 +1,434 @@
+C++ engine suite run
+Depth: 6
+Command: ./build/engine <fen> <depth>
+====================================================================================================
+
+Position 1
+FEN: rn1qkb1r/pp2pppp/5n2/3p1b2/3P4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 0 1
+Return code: 0
+Wall time: 0.076925s
+----------------------------------------------------------------------------------------------------
+g1f3
+
+[STDERR]
+Current Evaluation: 0
+PV: g1f3, b8c6, f1d3, e7e6, e1g1, f8d6
+Depth 6 complete with 0 researches.
+Best move found is g1f3, nodes taken: 130138, score: 10
+
+NODES: 130138| TIME: 0.0736829| NPS: 1.76619e+06
+
+====================================================================================================
+
+Position 2
+FEN: rn1qkb1r/pp2pppp/5n2/3p1b2/3P4/1QN1P3/PP3PPP/R1B1KBNR b KQkq - 1 1
+Return code: 0
+Wall time: 0.056372s
+----------------------------------------------------------------------------------------------------
+d8d7
+
+[STDERR]
+Current Evaluation: -10
+PV: d8d7, g1f3, b8c6, f1b5, e7e6, e1g1
+Depth 6 complete with 0 researches.
+Best move found is d8d7, nodes taken: 87046, score: -30
+
+NODES: 87046| TIME: 0.0532364| NPS: 1.63508e+06
+
+====================================================================================================
+
+Position 3
+FEN: r1bqk2r/ppp2ppp/2n5/4P3/2Bp2n1/5N1P/PP1N1PP1/R2Q1RK1 b kq - 1 10
+Return code: 0
+Wall time: 0.039584s
+----------------------------------------------------------------------------------------------------
+g4e5
+
+[STDERR]
+Current Evaluation: 60
+PV: g4e5, f1e1, d8e7, c4d5, e5f3, d1f3
+Depth 6 complete with 0 researches.
+Best move found is g4e5, nodes taken: 80846, score: 180
+
+NODES: 80846| TIME: 0.0365568| NPS: 2.21152e+06
+
+====================================================================================================
+
+Position 4
+FEN: r1bqrnk1/pp2bp1p/2p2np1/3p2B1/3P4/2NBPN2/PPQ2PPP/1R3RK1 w - - 1 12
+Return code: 0
+Wall time: 0.143667s
+----------------------------------------------------------------------------------------------------
+f1d1
+
+[STDERR]
+Current Evaluation: 95
+PV: f1d1, f8e6, e3e4, e6g5, f3g5, c8g4
+Depth 6 complete with 0 researches.
+Best move found is f1d1, nodes taken: 315963, score: 45
+
+NODES: 315963| TIME: 0.139657| NPS: 2.26242e+06
+
+====================================================================================================
+
+Position 5
+FEN: rnbqkb1r/ppp1pppp/5n2/8/3PP3/2N5/PP3PPP/R1BQKBNR b KQkq - 3 5
+Return code: 0
+Wall time: 0.087933s
+----------------------------------------------------------------------------------------------------
+b8c6
+
+[STDERR]
+Current Evaluation: -50
+PV: b8c6, d4d5, c6e5, g1f3, d8d6, c1e3
+Depth 6 complete with 1 researches.
+Best move found is b8c6, nodes taken: 153698, score: -55
+
+NODES: 153698| TIME: 0.0845317| NPS: 1.81823e+06
+
+====================================================================================================
+
+Position 6
+FEN: rnbq1rk1/pppp1ppp/4pn2/8/1bPP4/P1N5/1PQ1PPPP/R1B1KBNR b KQ - 1 5
+Return code: 0
+Wall time: 0.019867s
+----------------------------------------------------------------------------------------------------
+b4c3
+
+[STDERR]
+Current Evaluation: 25
+PV: b4c3, c2c3, b8c6, g1f3, d7d5, c1e3
+Depth 6 complete with 1 researches.
+Best move found is b4c3, nodes taken: 26853, score: 30
+
+NODES: 26853| TIME: 0.0176192| NPS: 1.52408e+06
+
+====================================================================================================
+
+Position 7
+FEN: r4rk1/3nppbp/bq1p1np1/2pP4/8/2N2NPP/PP2PPB1/R1BQR1K1 b - - 1 12
+Return code: 0
+Wall time: 0.058294s
+----------------------------------------------------------------------------------------------------
+a6b7
+
+[STDERR]
+Current Evaluation: -185
+PV: a6b7, e2e4, e7e6, d5e6, f7e6, d1c2
+Depth 6 complete with 0 researches.
+Best move found is a6b7, nodes taken: 127868, score: -150
+
+NODES: 127868| TIME: 0.0552752| NPS: 2.3133e+06
+
+====================================================================================================
+
+Position 8
+FEN: rn1qkb1r/pb1p1ppp/1p2pn2/2p5/2PP4/5NP1/PP2PPBP/RNBQK2R w KQkq c6 1 6
+Return code: 0
+Wall time: 0.114077s
+----------------------------------------------------------------------------------------------------
+e2e3
+
+[STDERR]
+Current Evaluation: 20
+PV: e2e3, c5d4, e3d4, b8c6, b1c3, d7d5
+Depth 6 complete with 0 researches.
+Best move found is e2e3, nodes taken: 203742, score: 0
+
+NODES: 203742| TIME: 0.111402| NPS: 1.8289e+06
+
+====================================================================================================
+
+Position 9
+FEN: r1bq1rk1/1pp2pbp/p1np1np1/3Pp3/2P1P3/2N1BP2/PP4PP/R1NQKB1R b KQ - 1 9
+Return code: 0
+Wall time: 0.072499s
+----------------------------------------------------------------------------------------------------
+c6e7
+
+[STDERR]
+Current Evaluation: 50
+PV: c6e7, f1d3, b7b6, c1e2, c8b7, e1g1
+Depth 6 complete with 1 researches.
+Best move found is c6e7, nodes taken: 116490, score: -5
+
+NODES: 116490| TIME: 0.070332| NPS: 1.65629e+06
+
+====================================================================================================
+
+Position 10
+FEN: rnbqr1k1/1p3pbp/p2p1np1/2pP4/4P3/2N5/PP1NBPPP/R1BQ1RK1 w - - 1 11
+Return code: 0
+Wall time: 0.089071s
+----------------------------------------------------------------------------------------------------
+d1c2
+
+[STDERR]
+Current Evaluation: 100
+PV: d1c2, d8e7, e2f3, b8d7, d2c4, d7e5
+Depth 6 complete with 0 researches.
+Best move found is d1c2, nodes taken: 213184, score: 65
+
+NODES: 213184| TIME: 0.086067| NPS: 2.47695e+06
+
+====================================================================================================
+
+Position 11
+FEN: rnbqkb1r/pppp1ppp/5n2/4p3/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq f3 1 3
+Return code: 0
+Wall time: 0.044984s
+----------------------------------------------------------------------------------------------------
+e5f4
+
+[STDERR]
+Current Evaluation: 10
+PV: e5f4, e4e5, f6g8, d2d4, d8h4, e1d2
+Depth 6 complete with 0 researches.
+Best move found is e5f4, nodes taken: 73971, score: 5
+
+NODES: 73971| TIME: 0.0427417| NPS: 1.73065e+06
+
+====================================================================================================
+
+Position 12
+FEN: r1bqk1nr/pppnbppp/3p4/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 2 6
+Return code: 0
+Wall time: 0.107160s
+----------------------------------------------------------------------------------------------------
+b1c3
+
+[STDERR]
+Current Evaluation: 45
+PV: b1c3, g8f6, e1g1, d7e5, c4b5, e8f8
+Depth 6 complete with 0 researches.
+Best move found is b1c3, nodes taken: 237440, score: 45
+
+NODES: 237440| TIME: 0.104123| NPS: 2.28037e+06
+
+====================================================================================================
+
+Position 13
+FEN: rnbq1b1r/ppp2kpp/3p1n2/8/3PP3/8/PPP2PPP/RNBQKB1R b KQ d3 1 5
+Return code: 0
+Wall time: 0.134280s
+----------------------------------------------------------------------------------------------------
+b8c6
+
+[STDERR]
+Current Evaluation: 60
+PV: b8c6, b1c3, d6d5, e4d5, c6e7, c1e3, e7d5
+Depth 6 complete with 1 researches.
+Best move found is b8c6, nodes taken: 236589, score: 70
+
+NODES: 236589| TIME: 0.131498| NPS: 1.79918e+06
+
+====================================================================================================
+
+Position 14
+FEN: rnbqkb1r/pppp1ppp/3n4/8/2BQ4/5N2/PPP2PPP/RNB2RK1 b kq - 1 6
+Return code: 0
+Wall time: 0.063972s
+----------------------------------------------------------------------------------------------------
+d6c4
+
+[STDERR]
+Current Evaluation: 25
+PV: d6c4, d4c4, d7d5, c4e2, c8e6, e2b5, b8c6
+Depth 6 complete with 1 researches.
+Best move found is d6c4, nodes taken: 118277, score: 45
+
+NODES: 118277| TIME: 0.0617438| NPS: 1.91561e+06
+
+====================================================================================================
+
+Position 15
+FEN: r2q1rk1/2p1bppp/p2p1n2/1p2P3/4P1b1/1nP1BN2/PP3PPP/RN1QR1K1 w - - 1 12
+Return code: 0
+Wall time: 0.043978s
+----------------------------------------------------------------------------------------------------
+d1b3
+
+[STDERR]
+Current Evaluation: -215
+PV: d1b3, f6e4, b1d2, e4d2, e3d2, g4f3, g2f3
+Depth 6 complete with 0 researches.
+Best move found is d1b3, nodes taken: 84287, score: -20
+
+NODES: 84287| TIME: 0.0410837| NPS: 2.05159e+06
+
+====================================================================================================
+
+Position 16
+FEN: r1bqkb1r/2pp1ppp/p1n5/1p2p3/3Pn3/1B3N2/PPP2PPP/RNBQ1RK1 b kq - 2 7
+Return code: 0
+Wall time: 0.082087s
+----------------------------------------------------------------------------------------------------
+e5d4
+
+[STDERR]
+Current Evaluation: 80
+PV: e5d4, f3d4, c8b7, b1c3, e4c3, d1e1, f8e7
+Depth 6 complete with 0 researches.
+Best move found is e5d4, nodes taken: 150122, score: 70
+
+NODES: 150122| TIME: 0.0791623| NPS: 1.89638e+06
+
+====================================================================================================
+
+Position 17
+FEN: r2qkbnr/2p2pp1/p1pp4/4p2p/4P1b1/5N1P/PPPP1PP1/RNBQ1RK1 w kq - 1 8
+Return code: 0
+Wall time: 0.014153s
+----------------------------------------------------------------------------------------------------
+h3g4
+
+[STDERR]
+Current Evaluation: 20
+PV: h3g4, h5g4, f3e1, d8h4, f2f3, g8f6
+Depth 6 complete with 1 researches.
+Best move found is h3g4, nodes taken: 23281, score: 125
+
+NODES: 23281| TIME: 0.0122386| NPS: 1.90227e+06
+
+====================================================================================================
+
+Position 18
+FEN: r1bqkb1r/pp3ppp/2np1n2/4p1B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq e6 1 7
+Return code: 0
+Wall time: 0.053250s
+----------------------------------------------------------------------------------------------------
+d4c6
+
+[STDERR]
+Current Evaluation: 35
+PV: d4c6, b7c6, f1c4, c8b7, e1g1, f8e7
+Depth 6 complete with 0 researches.
+Best move found is d4c6, nodes taken: 99534, score: 35
+
+NODES: 99534| TIME: 0.0506567| NPS: 1.96487e+06
+
+====================================================================================================
+
+Position 19
+FEN: rn1qk2r/1b2bppp/p2ppn2/1p6/3NP3/1BN5/PPP2PPP/R1BQR1K1 w kq - 5 10
+Return code: 0
+Wall time: 0.317174s
+----------------------------------------------------------------------------------------------------
+f2f4
+
+[STDERR]
+Current Evaluation: 95
+PV: f2f4, b5b4, e4e5, b4c3, e5f6, e7f6, b2c3
+Depth 6 complete with 0 researches.
+Best move found is f2f4, nodes taken: 793204, score: 35
+
+NODES: 793204| TIME: 0.31152| NPS: 2.54624e+06
+
+====================================================================================================
+
+Position 20
+FEN: r1b1kb1r/1pqpnppp/p1n1p3/8/3NP3/2N1B3/PPP1BPPP/R2QK2R w KQkq - 3 8
+Return code: 0
+Wall time: 0.084707s
+----------------------------------------------------------------------------------------------------
+e1g1
+
+[STDERR]
+Current Evaluation: 90
+PV: e1g1, e6e5, d4f5, e7f5, c3d5, c7d6, e4f5
+Depth 6 complete with 0 researches.
+Best move found is e1g1, nodes taken: 162632, score: 80
+
+NODES: 162632| TIME: 0.0813077| NPS: 2.0002e+06
+
+====================================================================================================
+
+Position 21
+FEN: r1bqnr2/pp1ppkbp/4N1p1/n3P3/8/2N1B3/PPP2PPP/R2QK2R b KQ - 2 11
+Return code: 0
+Wall time: 0.021615s
+----------------------------------------------------------------------------------------------------
+f7e6
+
+[STDERR]
+Current Evaluation: 15
+PV: f7e6, d1d5, e6f5, e5e6, g7e5, d5f3, f5e6
+Depth 6 complete with 1 researches.
+Best move found is f7e6, nodes taken: 35216, score: -60
+
+NODES: 35216| TIME: 0.018666| NPS: 1.88664e+06
+
+====================================================================================================
+
+Position 22
+FEN: r3kb1r/pp1n1ppp/1q2p3/n2p4/3P1Bb1/2PB1N2/PPQ2PPP/RN2K2R w KQkq - 3 11
+Return code: 0
+Wall time: 0.089965s
+----------------------------------------------------------------------------------------------------
+b1d2
+
+[STDERR]
+Current Evaluation: 15
+PV: b1d2, h7h6, e1g1, a5c6, h2h3, g4f5, d3f5
+Depth 6 complete with 0 researches.
+Best move found is b1d2, nodes taken: 173771, score: 60
+
+NODES: 173771| TIME: 0.08754| NPS: 1.98505e+06
+
+====================================================================================================
+
+Position 23
+FEN: r1bq1rk1/pppnnppp/4p3/3pP3/1b1P4/2NB3N/PPP2PPP/R1BQK2R w KQ - 3 7
+Return code: 0
+Wall time: 0.052556s
+----------------------------------------------------------------------------------------------------
+h3f4
+
+[STDERR]
+Current Evaluation: -30
+PV: h3f4, c7c5, c1e3, c5c4, d3e2, e7f5
+Depth 6 complete with 0 researches.
+Best move found is h3f4, nodes taken: 131101, score: 15
+
+NODES: 131101| TIME: 0.0500071| NPS: 2.62165e+06
+
+====================================================================================================
+
+Position 24
+FEN: r2qkbnr/ppp1pp1p/3p2p1/3Pn3/4P1b1/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 2 6
+Return code: 0
+Wall time: 0.043046s
+----------------------------------------------------------------------------------------------------
+f1b5
+
+[STDERR]
+Current Evaluation: 105
+PV: f1b5, g4d7, b5d7, e5d7, e1g1, g8f6
+Depth 6 complete with 1 researches.
+Best move found is f1b5, nodes taken: 76230, score: 115
+
+NODES: 76230| TIME: 0.0408305| NPS: 1.86698e+06
+
+====================================================================================================
+
+Position 25
+FEN: rn2kb1r/pp2pppp/1qP2n2/8/6b1/1Q6/PP1PPPBP/RNB1K1NR b KQkq - 1 6
+Return code: 0
+Wall time: 0.050067s
+----------------------------------------------------------------------------------------------------
+b6b3
+
+[STDERR]
+Current Evaluation: -80
+PV: b6b3, c6b7, b3c2, b1c3, c2c1, a1c1
+Depth 6 complete with 1 researches.
+Best move found is b6b3, nodes taken: 73438, score: 45
+
+NODES: 73438| TIME: 0.0471045| NPS: 1.55905e+06
+
+====================================================================================================
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Positions run: 25
+Total wall time: 1.961285s
