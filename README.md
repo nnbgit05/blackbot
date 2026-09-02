@@ -1,7 +1,3 @@
-# BlueBot2
-
-Rewrite of [BlueTot/bluebot-chess-engine](https://github.com/BlueTot/bluebot-chess-engine) in C++ along with extra optimisations. Uses [Disservin](https://github.com/Disservin/chess-library)'s chess move generation library. This is currently a work in progress!
-
 ## Installation (linux only)
 
 Clone the repository
