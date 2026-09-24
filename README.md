@@ -1,9 +1,7 @@
 ## Installation (linux only)
 
-Clone the repository
 
 ```bash
-git clone https://github.com/BlueTot/bluebot2
 ```
 
 Build from source in release mode (install `cmake` if not already)
