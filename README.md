@@ -2,6 +2,7 @@
 
 
 ```bash
+Clone the Repo
 ```
 
 Build from source in release mode (install `cmake` if not already)
